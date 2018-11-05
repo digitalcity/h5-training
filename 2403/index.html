@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+
+ html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, font, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-weight: inherit;
+        font-style: inherit;
+        font-size: 100%;
+        font-family: inherit;
+        vertical-align: baseline;
+    }
+    .clearfix:before,
+    .clearfix:after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                        visibility: hidden;
+                        line-height: 0;
+                        height: 0;
+                        font-size:0;
+}
+    .clearfix { *zoom:1;}
+                li{
+                    list-style: none;
+                }
+                a{
+                    text-decoration: none;
+                }        
+              .wrap{
+                width: 100%;
+                height: 2498px;
+                /*background-color: #6847c6;*/
+                }
+                 .menu{
+                    width: 100%;
+                    background:linear-gradient(#212121,#121212);
+                    border-bottom:1px solid #252525 ;
+                }
+                .menu-inner{
+                    width: 1170px;
+                    margin: 0 auto;/*居中*/
+                }
+                .menu-left{
+                    float: left;
+                }
+                .menu-left li{
+                    list-style: none;
+                    float:left;
+                    margin-left: 31px;
+                    line-height: 40px;
+                }
+                .menu-left li.line{
+                    background-position: right top;
+                    background-repeat: repeat-y;
+                    background-image: url('images/line-menu.jpg');
+                    padding-right: 24px;
+                    margin-left: 24px;
+                }
+                .menu-left li a{
+                    color:#a0a0a0;
+                    font-size: 14px;
+                text-decoration: none;
+                }
+                .menu-left li a.first{
+                    margin-top: 14px;
+                    margin-bottom: 12px;
+                    width: 17px;
+                    padding-top:15px;
+                    display:block;
+                    background-image: url('images/tm/tm_home.png');
+                }
+                .menu-right {
+                    float:right;
+                    font-size: 20px;
+                    color:#020001;
+                    line-height: 40px;
+                    text-shadow: 0 1px #303133;
+                }             
+                .top{
+                    width: 100%;
+                    background-color: #f35d2a;
+                }
+                .top-inner{
+                    width: 1170px;
+                    margin:0 auto;
+                }
+                .logo{
+                    width: 322px;
+                    display:block;
+                    padding-top:59px;
+                    background-image: url('images/logo.png');
+                    background-repeat: no-repeat;       
+                    margin-top:15px;
+                    float:left;
+                }
+                nav{         
+                    float:right;
+                }
+                nav ul li{
+                    float:left;
+                    margin-left:10px;
+                    margin-right:10px;
+                }
+                nav ul li a{
+                    display:block;
+                    width: 84px;                 
+                    text-align: center;
+                    line-height:84px;
+                    font-size:14px;
+                    color:#f1edee;                 
+                }
+                nav ul li .active,nav ul li a:hover{
+                    background-image: url('images/bg-content.jpg');
+                }                   
+                .banner{
+                    width: 100%;
+                    background-image: url('images/bg-content.jpg');
+                }
+                .banner-inner{
+                    width: 1170px;
+                    padding-top: 40px;
+                    padding-bottom: 44px;
+                    margin:0 auto;
+                }
+                .banner-words{                                     
+                    margin-top: 60px;                   
+                }
+                h2{
+                    font-size:46px;
+                    color: #ef5c0d;
+                    float:left;
+                    margin-right:60px;
+                }
+                .banner-words div{
+                    border-left:1px solid #464646;
+                    padding-left:26px;
+                    text-align: center;
+                    overflow: hidden;
+                }
+                .banner-words div p{
+                    font-size:14px;
+                    line-height: 20px;
+                    color: #717173;
+                    text-align: left;
+                    margin-bottom: 14px;
+                }
+                .wrap .Down{
+                    font-size: 14px;
+                    color:#fff;
+                    line-height:31px;
+                    text-align: center;
+                    padding:5px 8px;
+                    background-color: #f35c27;
+                }
+                section{
+                    width: 100%;
+                    /*height: 1362px;*/
+                    background-color: #ffffff;
+                }
+                .work{
+                    width: 1170px;
+                    margin:0 auto;
+                    padding:44px 0 36px 0;
+                }
+                h3{
+                    font-size: 46px;
+                    color:#f25c27;
+                    line-height:36px;
+                }
+                .work ul{
+                    margin-left:-30px;
+                }
+                .work li{
+                    float:left;
+                    margin:30px 0 0 30px;              
+                }
+                .work li a,.work li a img{
+                    display:block;
+                }
+                .download{
+                    width: 100%;
+                    border-top: 2px dashed #cccccc;
+                    border-bottom: 2px dashed #cccccc;
+                    background-color: #eeeeee;
+                }
+                .download-inner{
+                    width: 1170px;
+                    margin:0 auto;
+                    padding-top:23px;
+                    padding-bottom: 14px;
+                    text-align: center;
+                }
+                .download i{
+                    font-size: 14px;
+                    color:#6f716e;
+                    display:block;
+                    line-height: 44px;
+                }
+                .download em{
+                    display:block;
+                    font-size: 28px;
+                    color:#f35c27;
+                    line-height: 44px;
+                }
+                .blog{
+                    width: 1170px;
+                    margin:0 auto;
+                    padding:42px 0 55px 0;
+                }
+                .blog h3{
+                    margin-bottom: 25px;
+                }
+                .blog-inner{
+                    margin-left:-30px;
+                }
+                .blog-inner h4{
+                    line-height:80px;
+                    font-size: 30px;
+                    color:#f35b20;
+                }
+                .blog-inner>div{
+                    float:left;
+                    width: 270px;
+                    margin-left:30px;
+                }
+                .blog-inner>div img{
+                    display:block;
+                    margin-bottom: 10px;
+                }
+                .blog-inner>div a.title{
+                    font-size: 16px;
+                    color: #f35b29;
+                }
+                .blog-inner>div>div{
+                    margin-top: 10px;
+                }
+                .blog-inner>div>div span{
+                    color:#71726d;
+                    font-size:12px;
+                    border-right: 1px solid #7f7f7f;
+                    padding-left: 18px;
+                    padding-right: 8px;
+                    background:url('images/glyphicons.png') no-repeat 0 -3px;
+                }
+                .blog-inner>div>div .left{
+                   padding-left:25px;
+                   font-size: 12px;
+                   color: #f35b29;
+                   background:url('images/glyphicons.png') no-repeat 9px -28px;
+                }
+                .blog-inner>div>div .right{
+                    float:right;
+                    padding-left:16px;
+                   font-size: 12px;
+                   color: #f35b29;
+                   background:url('images/glyphicons.png') no-repeat 0 -50px;
+                   margin-top:2px;
+                }
+                .blog-inner>div p{
+                    font-size: 12px;
+                    color:#71726d;
+                    line-height: 20px;
+                    margin-top:6px;
+                    margin-bottom: 20px;
+                }
+                .footer-up{
+                    background-color: #221d1a;
+                }
+                .footer-up-inner{
+                    width: 1170px;
+                    margin:0 auto;
+                    padding-bottom: 40px;
+                }
+                .footer-up-inner h5{
+                    line-height: 84px;
+                    font-size: 40px;
+                    color:#f35b29;
+                }
+                .about{
+                    width: 535px;
+                    float:left;
+                }
+                .about img{
+                    float:left;
+                    margin-right: 30px;
+                }
+                .about p{
+                    font-size:12px;
+                    line-height: 20px;
+                    color: #70716c;
+                }
+                .about p span{
+                    display:block;
+                    margin-bottom: 10px;
+                    color:#fff;
+                }
+                .link{
+                    float:right;
+                    width: 570px;
+                }
+                .link ul{
+                    float:left;
+                    width: 134px;
+                }
+                .link ul li{
+                     background-image: url('images/marker-1.png');
+                    background-repeat: no-repeat;
+                    background-position: left 14px;
+                    padding-left:11px;
+                    line-height: 30px;
+                }
+                .link ul li a{
+                    font-size:12px;
+                     color:#f35b29;
+                }
+                .link ul li a:hover{
+                    text-decoration: underline;
+                }
+                .footer-down{
+                    width: 1170px;
+                    margin:0 auto;
+                }
+                .footer-down p{
+                    line-height:72px;
+                    font-size: 12px;
+                    color: #1b1b1b;
+                    float:left;
+                }
+                .footer-down p a{
+                     color:#f35b29;
+                 }
+                .share{
+                    float:right;
+                    padding-top:23px;
+                }
+                .share a{
+                    display:block;
+                    float:left;
+                    width: 30px;
+                    margin-left:5px;
+                    padding-top:30px;
+                    background-color: red;
+                }
+                .footer-down .share .face{
+                    background: url(images/soc-icon-1.png);
+                }
+                .footer-down .share .face:hover{
+                    background: url('images/soc-icon-1.png') 0 -30px;
+                }
+                .footer-down .share .point{
+                    background: url('images/soc-icon-2.png');
+                }
+                .footer-down .share .point:hover{
+                    background: url('images/soc-icon-2.png') 0 -30px;
+                }
+                .footer-down .share .twi{
+                    background: url('images/soc-icon-3.png');
+                }
+                .footer-down .share .twi:hover{
+                    background: url('images/soc-icon-3.png') 0 -30px;                   
+                }
+                 .footer-down .share .goo{
+                    background: url('images/soc-icon-4.png');
+                }
+                .footer-down .share .goo:hover{
+                    background: url('images/soc-icon-4.png') 0 -30px;                    
+                }               
+         </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <div class="menu">
+                    <div class="menu-inner clearfix"> 
+                        <ul class="menu-left">
+                        <li class="line"><a class="first" href="#"></a></li>
+                        <li><a href="#">Scaffolding</a></li>
+                        <li><a href="#">Base CSS</a></li>
+                        <li><a href="#">Component</a></li>
+                        <li class="line"><a href="#">Javascript</a></li>
+                        <li><a href="#">TM add-ons</a></li>
+                        </ul>               
+                            <a class="menu-right" href="#">Bootstrap</a>
+                    </div>
+                </div>
+                <div class="top">
+                    <div class="top-inner clearfix">
+                        <h1 ><a class="logo" href="#"></a></h1>
+                        <nav>
+                            <ul>
+                                <li><a class="active" href="#">HOME</a></li>
+                                <li><a href="#">WORK</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">PROCESS</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+          
+                <div class="banner">
+                    <div class="banner-inner clearfix">
+                        <img src="images/banner_16.jpg" alt="" />
+                        <div class="banner-words clearfix">
+                            <h2>Namaskar!</h2>
+                            <div>
+                                <p>This template is designed and developed over the Bootstrap frontend framework which is a free front-end framework for designers Template is fully responsive and compatible with all the major browsers.</p>
+                                <a class="Down" href="#">Download Bootstrap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </header>
+            <section>
+                <div class="work">
+                    <h3>Our work</h3>
+                   <ul class="clearfix">
+                       <li><a href="#"><img src="images/work/1.jpg" alt=""></a></li>
+                       <li><a href="#"><img src="images/work/2.jpg" alt=""></a></li>
+                       <li><a href="#"><img src="images/work/3.jpg" alt=""></a></li>
+                       <li><a href="#"><img src="images/work/4.jpg" alt=""></a></li>
+                       <li><a href="#"><img src="images/work/5.jpg" alt=""></a></li>
+                       <li><a href="#"><img src="images/work/6.jpg" alt=""></a></li>
+                       <li><a href="#"><img src="images/work/7.jpg" alt=""></a></li>
+                       <li><a href="#"><img src="images/work/8.jpg" alt=""></a></li>
+                   </ul>
+                </div>
+                <div class="download">
+                <div class="download-inner">
+                    <p>
+                    <em>Completly Customizable and Responsive <br> Easy to Use. Totally Free to Download. Made with love!</em>
+                    <i>The complete template is created using the Bootstrap framework, which is highly customizable with lots of options.</i>
+                    </p>
+                    <a class="Down" href="#">Download</a>
+                </div>
+                </div>
+                <div class="blog">
+               <h3>From blog</h3>
+                 <div class="blog-inner clearfix">   
+                    <div class="web">
+                        <h4>Web Design</h4>
+                        <img src="images/blog-featured-01.jpg" alt="">
+                        <a class="title" href="#">At vero eos et accusamus et iusto</a>
+                        <div>
+                            <span>9.11.2012</span>
+                            <a class="left" href="#">Admin</a>
+                            <a class="right" href="#">7 comments</a>
+                        </div>
+                        <p>Vivamus sollicitudin libero auctor arcu pulvinar commodo.</p>
+                        <a class="Down" href="#">Read More</a>
+                    </div>
+                    <div class="gra">
+                        <h4>Graphics</h4>
+                            <img src="images/blog-featured-02.jpg" alt="">
+                            <a class="title" href="#">Deleniti atque corrupti quos</a>
+                            <div>
+                                <span>9.11.2012</span>
+                                <a class="left" href="#">Admin</a>
+                                <a class="right" href="#">4 comments</a>
+                            </div>
+                            <p>Vestibulum volutpat urna sed sapien vehicula varius.</p>
+                            <a class="Down" href="#">Read More</a>
+                    </div>
+                    <div class="media">
+                        <h4>Social Media</h4>
+                            <img src="images/blog-featured-03.jpg" alt="">
+                            <a class="title" href="#">Similique sunt in culpa qui officia</a>
+                            <div>
+                                <span>9.11.2012</span>
+                                <a class="left" href="#">Admin</a>
+                                <a class="right" href="#">9 comments</a>
+                            </div>
+                            <p>Pellentesque mi justo, laoreet non bibendum non, auctor imperdiet eros.</p>
+                            <a class="Down" href="#">Read More</a>
+                    </div>
+                    <div class="photo">
+                        <h4>Photography</h4>
+                            <img src="images/blog-featured-04.jpg" alt="">
+                            <a class="title" href="#">Similique sunt in culpa qui officia</a>
+                            <div>
+                                <span>9.11.2012</span>
+                                <a class="left" href="#">Admin</a>
+                                <a class="right" href="#">1 comment</a>
+                            </div>
+                            <p>Vestibulum volutpat urna sed sapien vehicula varius.</p>
+                            <a class="Down" href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <footer>
+                <div class="footer-up">
+                    <div class="footer-up-inner clearfix">
+                        <div class="about">
+                            <h5>Shortly about us</h5>
+                                <p><img src="images/15.jpg" alt="" />
+                                <span>Mauris scelerisque odio quis leo viverra ac porttitor sem blandit. Sed tincidunt mattis varius. Nunc sodales ipsum nisl, eget lacinia nibh.</span>
+                                Cras lacus tortor, tempus vitae porta nec, hendrerit id dolor. Nam volutpat gravida porta. Suspendisse turpis nibh, volutpat.
+                                </p>
+                        </div>                                                   
+                        <div class="link clearfix">
+                            <h5>Some quick links</h5>
+                            <ul>
+                                <li><a href="#">Campaigns</a></li>
+                                <li><a href="#">Portraits</a></li>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Fine Art</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Campaigns</a></li>
+                                <li><a href="#">Portraits</a></li>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Fine Art</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Campaigns</a></li>
+                                <li><a href="#">Portraits</a></li>
+                                <li><a href="#">Fashion</a></li>
+                                <li><a href="#">Fine Art</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#">Advertising</a></li>
+                                <li><a href="#">Lifestyle</a></li>
+                                <li><a href="#">Love story</a></li>
+                                <li><a href="#">Landscapes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-down clearfix">
+                    <p class="copyright">&copy 2018项目实训课 | 指导公司 by <a href="http:www.teacherlin.cn" target="blank">第嘉传媒</a></p>
+                    <div class="share clearfix">
+                        <a class="face" href="#"></a>
+                        <a class="point" href="#"></a>
+                        <a class="twi" href="#"></a>
+                        <a class="goo" href="#"></a>
+                    </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>      
+        <meta charset="utf-8">
+        <title>121212</title>
+        <style type="text/css" media="screen">
+        *{margin:0;}
+            .container{width: 100%;background-color: #eee;}
+            .header-top{height:61px;background: linear-gradient(#f8756a,#f75448);}
+            .banner{
+                height: 769px;background-color: #617a7e;
+                background-image: url(images/photo.jpg);
+                background-repeat:  no-repeat;
+                background-size: 100%;}
+                .hotpic{height: 434px;background-color: #ced1d5;}
+                .banner h2 {padding-top: 96px;
+                    text-align:center;
+                    font-family: verdana;
+                    font-size: 66px;
+                    color:#fff;
+                    font-weight: normal;
+                    text-transform: capitalize;}
+                    .banner-txt{
+                        width: 660px;height: 172px;border:1px solid none;margin:114px auto 0;
+                    }
+                    .banner-txt div {width: 280px;float: left;color:white;}
+                    .banner-txt .recurring {float: right;}
+                    .banner-txt h3{font-family:verdana;font-size: 24px;font-weight:  normal;margin-bottom: 34px;padding-left: 58px;background-repeat: no-repeat;background-position: 0 center;line-height: 1.8em;}
+                    .accept h3{background-image: url(images/accept.png);}
+                    .recurring h3{background-image: url(images/recuirring.png);}
+                    .banner-txt p {font-family:verdana;font-size: 14px;color:#b3adb0;}
+                    .signup{display: block;width: 201px;height: 64px;
+                        background: linear-gradient(#f8756a,#f75347);
+                        margin-left: auto;margin-right: auto;
+                        border-radius: 32px;
+                        font-family: verdana;
+                        font-size:24px;
+                        color:#fff;
+                        text-align: center;
+                        line-height:64px;
+                        text-decoration:none;
+                        margin-top:147px;
+                        text-shadow: 2px 2px 0 #a1443d;
+                    }
+                    .hotpic{background-image: url(images/1.gif);background-repeat:repeat-x;}
+                    .hoptic-box{width: 755px;margin: 0 auto;}
+                    .product-info{width: 754px;margin: 0 auto;}
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <header>
+            <div class="header-top"></div>
+            <div class="banner">
+                <h2>payments made simple</h2>
+                <a href="http://www.baidu.com"class="signup">sign up.free</a>
+                <div class="banner-txt">
+                <div class="accept">
+                <h3>Accept Payments</h3>
+                <p>Space Box makes accepting payments quick 
+& easy.Setting up'Space' takes just 
+seconds.Even add your own logo and 
+header image to personalize each Space</p>
+</div>
+<div class="recurring">
+<h3>Recurring Billing</h3>
+<p>Charge customers on a recurring basis for 
+access to your content.All membership 
+sign-ups. management and billing is taken 
+care of fr you.Try it out!</p>
+            </div>
+            </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="hoppic">
+                <div class="hotpic-box">
+                <img src="images/1.gif" alt="">
+                </div>
+            </div>
+
+            <div class="product-info"></div>
+            <div class="pic-ad"></div>
+            <div class="product-function"></div>
+            <div class="pricing"></div>
+        </section>
+    </div>
+    </body>
+</html> 

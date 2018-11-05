@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+    <title>Golden state warriors</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <style type="text/css" media="screen">
+        *{margin:0;}
+        .clearfix:after{content:"";display:block;clear:both;} /* 对应下边<div class="clearfix"> 这个盒子 只会选择clearfix而不选择clearfix的下辈 */
+        .container{width:100%;}
+        .header-top{height:61px;background:linear-gradient(#f84264,#f85347);}  /* 这里有个渐变*/
+        .header-top h1{width: 52.9824%;height: 61px;background-image: url(images/27.png);background-repeat: no-repeat;background-position: center;margin:0 auto;text-indent: -999px;}
+            /* text-indent 是首行缩进的意思 */
+        .banner{/*height:769px;*/background-color: #617a7e;
+                background-image: url(images/photo.jpg);  /* 插入背景图 */    /* 同一个元素背景图永远压着背景色 */
+                background-position: center 0; /*距离左边右边、上边下边的距离  分别代表水平和垂直方向 */
+                background-repeat:no-repeat;  /* 使背景图不重复 */
+                background-size: cover;     /* 适应屏幕的大小 */
+               }
+        .banner h2{
+            padding-top: 96px; /* 内边距*/
+            text-align: center;  /*文本对齐，left左对齐，center居中，right右对齐 */
+            font-family: Segoe Script; /*设置字体*/
+            font-size:80px;  /* 设置字号*/
+            color:#f84264;  /* 设置文本颜色 */
+            font-weight:normal;  /* 设置文本的粗细，normal正常，bold加粗 */
+            margin-bottom: 147px; /* 方块与字体的下边距 */
+            text-transform: capitalize; /* 英文字大小写转换，capitalize首字母大写，lowercase全部小写，uppercase全部大写 */
+        }
+        .banner-txt{     /*大盒子为了固定小盒子的位置 */
+                    width:  46.4788%/*660/1423*/;/*height: 180px;*/margin:114px auto 0;    /* margin:0 auto 指的是上下边距为0 左右对齐 */
+        }        /* solid red 指的是线条是红色 */    /* margin-top 指的是距离橙色方块的上边距 */  /* border: 1px 指的是加边界 */ 
+                 /* margin:114px auto 0 指的是 上边距  左右边距  下边距 */
+        .banner-txt div{width:   280px/* 42.4242%  */;float:left;color:white;}   /* 大方块中的两个小方块 */
+        .banner-txt .recurring{float:right;}  /* recurring标题的内容和下面的内容往右飘 */ 
+        .banner-txt h3{font-family:Segoe Script;font-size:20px;font-weight: normal;margin-bottom: 34px;color:white;padding-left: 58px;background-repeat: no-repeat;background-position: 0 center;line-height: 1.8em;}  /* 标题的设定  .banner-txt的 h3包含两个标题内容   margin-bottom表示h3和p两者的下边距 */  /* padding-left: 58px 标题和标题前面插入符号之间的边距 */   /* line-height: 1.8em 行高1.8em  em代表当前字号 */
+        .main img {width:100%;}
+        .accept h3{background-image: url(images/accept.png);}   /* 插入标题前面的符号 */
+        .recurring h3{background-image: url(images/recuirring.png);}  /* 插入标题前面的符号 */
+        .banner-txt p{font-family: Segoe Script;font-size: 14px;color: yellow;}  /* 两个段落的设定 */
+        /* 下面singup按钮的样式 */ 
+        .singup{display:block;width:  200px/* 14.035% */;height:64px;     /* 橙色方块的长度和宽度 */
+                 background:linear-gradient(#f8756a,#f75347);  /* 橙色方块渐变背景色 */
+                 margin-left: auto;margin-right: auto;   /* 橙色方块左右自动对齐 */
+                 border-radius:32px;   /* 将图形的方角变成圆角，圆的半径32是方块高度64的一半 */
+                 font-family:Segoe Script;    /* 方块里的字体 */
+                 font-size: 24px;   /* 方块里字体的大小 */
+                 color:white;    /* 方块里字体的颜色 */
+                 text-align:center;    /* 字体居中在方块  */
+                 line-height: 64px;     /* 使字体与方块垂直   行高：字块高度+上下两个行间距的一半 */
+                 text-decoration: none;    /*  取消下划线 */
+                 text-transform: capitalize;   /* 字体大小写转换 */
+                 text-shadow:3px 3px 0 #f75347;        /* x轴方向的位置 y轴方向偏移的位置 模糊程度 投影颜色 。横坐标往右是正值 纵坐标往下是正值*/ 
+
+               }
+      /*  .banner img{width: 100%;height: auto;}  */
+        .hotpic{background-image: url(images/15.gif);background-position: 0 -38px;background:linear-gradient(#b3b7bc,#e8eaec);}
+        .hotpic-god{width:   /*755/1423 */ 52.9824%;margin: 0 auto;}
+        .product-info{width: 52.9824%;margin: 0 auto;}
+        .product-info>div{padding:43px 0;}    /* 向右飘的时候会让父类盒子没高，  用来解决不能给定高，需要自适应  */
+        .icon{width: 179px; /*height: 179px;*/ float:left;border:1px solid red;}  /* 图片向左飘 */
+        .info{width: 70.1986% /* 755/1423 */;float:right;}      /* 段落向右飘 */
+        .info h4{font-family: Segoe Script;font-size: 28px;color: #f86960;}
+        .info p {font-family: Segoe Script;font-size: 14px;margin-top:25px;}
+        .pic-ad {background-image: url(images/12.gif);background-position: 0 11px;background-repeat:repeat-x ;}   /* 父类里面要添加颜色的背景图 */
+         /*  background-repeat:repeat-x ;  使没对齐的部分向下移  background-position: 0 11px;表示往下移动11   */
+        .pic-pic{margin: 0 auto;}  /* 因为在下面定义class pic-pic的时候 已经插入了图片，所以这里只需要说明插入图片的宽度和 左右自动对齐 */
+        .product-function{width: 60.8424% /*867/1425 */;margin: 0 auto;}
+        .product-function div {width: 216px /*216/867 */;height: 147px;float:left;border-right: 1px gray solid;text-align: center;padding-top: 57px;padding-bottom: 80px;}    /* div的高度为255 但是由于内边距向上和向下分别间隔57和51 实际效果需要用高度减去上边距和下边距 */
+        .product-function div:last-child{border-right: none;}  /* 防止最后一个 另起一行到下面去 */
+        .product-function span {display:block;width: 36px/* 36/216 */ ;height:32px;border:1px solid red; margin: 0 auto;background-repeat:no-repeat ;background-position: center 0;}   /* display:block 代表需要建立个方块来存储图片 */
+        .product-function div:first-child span {background-image:url(images/20.gif);}  /* span 是图片 */
+        .product-function div:nth-child(2) span{background-image:url(images/19.gif);}
+        .product-function div:nth-child(3) span{background-image:url(images/18.gif);}
+        .product-function div:nth-child(4) span{background-image:url(images/21.gif);}
+        .product-function h5 {color:purple;font-family: Segoe Script;font-size: 24px;margin: 22px 0;}
+        .product-function p{color:red;}
+        .pricing{/*height: 656px; */background:linear-gradient(#f84264,#f85347);padding-bottom: 20px;}
+        .price-txt{width: 909px /* 909/1423 */;margin: 0 auto;border:1px solid red;}  /* text-align: center 表示文档居中 */
+
+        .price-box{display:table-row;}
+        .price-box>div{display:table-cell;vertical-align: bottom;padding:0 20px;}
+        .price-box>div div{width: 18.7224% ;padding:40px 4.6255%;border-radius: 12px;background-color: #fff;line-height: 2.5em;box-shadow: 0 0 8px #999;}
+        .pricing h4{font-family: Segoe Script;font-size: 28px;}
+        .pricing span{font-weight: bold;}
+        .pricing p {color: purple;font-family:Segoe Script ;}
+        .price-box h3{text-align: center;font-size: 40px;}
+        .boxxx{width:  63.8596%/*908/1423 */;height: 68px;border:1px solid black;box-shadow: 2px 2px 5px #c16059 inset;border-radius:34px;text-align: center;line-height: 69px;margin:0 auto;margin-top: 50px;}
+        .boxxx span{font-size: 40px;color:#fff;font-weight: normal;}
+        .boxxxx{width: 63.8596%/*908/1423 */;height: 68px;border:1px solid black;margin: 0 auto;margin-top:70px;border-radius:34px;}
+        .boxxxx h6{text-align: center;font-size: 20px;}    
+            footer{background-color: #fff;box-shadow: 0 -3px 5px #ba615b;padding:80px 0 50px 0;}
+            .copy{font-size: 14px;color: #b5b9bd;text-align: center;margin-top: 30px;}
+            .copy a{color: #f86960;text-decoration: none;}
+
+
+        main img{width:100%;}
+        @media screen and (max-width:480px){
+                .banner h2{font-size: 30px;padding-top: 50px;margin-bottom: 70px;}
+                .banner-txt{width:80%;}
+                .banner-txt div {float:none;width:100%;}
+                .banner-txt .recurring{float:none;}
+                .banner-txt h3{margin-bottom: 0px;margin-top: 30px;font-size: 16px;}
+                .singup {width:80%;}
+                .info h4{font-size: 22px;}
+                .hotpic-god,.pic-ad{width: 100%;}
+                .product-info{width: 90%;text-align: center;}
+                .icon,.info{float:none;margin:0 auto;}
+                .info-txt p{text-align: justify;}
+                .info{width: 100%;padding-top: 25px;}
+                .product-function{width:96%;}
+                .product-function div{width:49%;}
+                .product-function div:first-child,.product-function div:nth-child(2){border-bottom: 1px #dbdbdb solid;}
+                .product-function div:nth-child(2){border-right: none;}
+                .price-box,.price-box>div{display:block;}
+                .price-box>div{margin-bottom: 30px;}
+                .price-box>div div{padding:40px 4.6255%;text-align: center;}
+                .boxxxx{padding-bottom:40px;}
+
+
+            } 
+    </style>   <!-- 样式 是固定格式 */  -->
+</head>
+<body>
+    <div class="comtainer"> </div>
+        <header>
+            <div class="header-top">
+                <h1>dream</h1>
+            </div>
+            <div class="banner">
+            <h2>golden state warriors</h2>
+            <a href="http://nba.com" class="singup">stephen curry</a>     <!--   class和 a href 是标签的属性  -->
+               <!--  <img src="images/photo.jpg"> -->
+               <div class="banner-txt">
+               <div class="accept">
+                 <h3>Accept Payments </h3>    
+                 <p>Space Box makes accepting payments quick& easy. Setting up 'Spaces' takes justseconds. Even add your own logo andheader image to personalize each Space. </p>
+            </div>
+               <div class="recurring">
+                 <h3>Recurring Billing</h3>
+                 <p> Charge customers on a recuring basis foraccess to your content All membershipsign-ups. management and biling is takencare of for you. Try it out! </p>
+            </div>
+            </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="hotpic">
+                <div class="hotpic-god"> <img src="images/13.jpg" alt=""  /></div>
+            </div>
+            <div class="product-info">
+              <div class="clearfix">  <!--盒子里面有两个小盒子，分别是图片和段落  -->
+                  <div class="icon"><img src="images/4.gif" alt=""  /></div>
+                  <div class="info">
+                  <h4>Zero-hassle Subscriptions</h4>
+                  <y>No coding necessary! Use Space Box to charge customers on a monthly or yearly basis for access to your content. The content manager makes it easy to create new posts for your paying customers to view. Posts support Markdown and you can upload any type of file as well. You can even use Space Box to collect money for rent, gym memberships, etc. Want to sell products but don't want to deal with PayPal or code things yourself? Use Space Box!</y>
+                  </div>
+              </div>
+            
+                  <div class="clearfix">
+                  <div class="icon"><img src="images/5.gif" alt=""  /></div>
+                  <div class="info">
+       
+                      <h4>Beautiful On All Devices</h4>
+                      <y>Everything on Space Box looks beautiful on both desktop and mobile devices. Space Box was designed with mobile in mind and makes it easy for your customers to send you payments, view your premium content and manage their account from their mobile device. Space Box is completely retina optimized for crisp visuals, and any Space you create will be as well. Space Box also uses a HTML5 optimized player for all video & audio you upload for your customers. </y> 
+                  </div>
+              </div>
+            
+                  <div class="clearfix">
+                  <div class="icon"><img src="images/6.gif" alt=""  /></div>
+                  <div class="info">
+             
+                      <h4>Create Spaces</h4>
+                      <y>Space Box makes setting up payment forms, called 'Spaces', super fast. You can create either a 'One-Time Payment' or a 'Recurring Payment' Space. A One-Time Space (example) can be used to accept payments from clients, sell products, receive donations, etc. While a Recurring Space (example) enables you create pricing plans and sign members up onto those plans and charge them on a monthly or yearly basis. Members will be able to Log-In to your Space to manage their account and view your premium content.</y>
+                  </div>
+              </div>
+           
+                  <div class="clearfix">
+                  <div class="icon"><img src="images/7.gif" alt=""  /></div>
+                  <div class="info">
+            
+                      <h4>Member Management</h4>
+                      <y>You have full control over all members that sign up to any of your Spaces. You can view their account and payments made to you, suspend access, remove their account and even issue refunds via Stripe. Additionally, members can manage their own account and even upgrade / downgrade between plans you have setup for that Space.</y>
+                  </div>
+              </div>
+           
+                  <div class="clearfix">
+                  <div class="icon"><img src="images/8.gif" alt=""  /></div>
+                  <div class="info">
+              
+                      <h4>Digital Delivery</h4>
+                      <y>Want to sell your digital goods? Space Box makes it easy. Simply upload a file of any type to your One-Time Space and you're done! When customers visit the Space and make a purchase they'll receieve an email with a unique download link to get the file automatically. They can even make requests to re-download a file and you can approve or deny requests with a click! </y>
+                  </div>
+              </div>
+           </div>
+            <div class="pic-ad">
+               <div class="pic-pic"> <img src="images/11.jpg" alt=""  /></div>
+            </div>
+            <div class="product-function clearfix">
+             <div>
+              <span></span>
+               <h5>Virtual Terminal</h5>
+               <p>Swipe with any USB card reader or charge cards manually.</p>
+             </div>
+             <div>
+               <span></span>
+               <h5>256-bit SSL</h5>
+               <p>All transactions and payment forms are secure and encrypted.</p>
+            </div>
+            <div>
+               <span></span>
+               <h5>Reports</h5>
+               <p>Keep track of sales and membership sign-ups at a glance.</p>
+             </div>
+             <div>
+               <span></span>
+               <h5>Auto Emails</h5>
+               <p>Receipts & notifications emailed to customers automatically.</p>
+             </div>
+             </div>
+            <div class="pricing"> 
+               <div class="price-txt">  <!-- -->
+               <h3>Pricing</h3>
+                <div class="price-box">
+                <div>
+                <div class="price-box-inner">
+                  <h4>Pro</h4>
+                  <span>1% / transaction</span>
+                  <p>Virtual Terminal Unlimited Spaces</p>
+                </div>
+                </div>
+                <div>
+               <div class="price-box-inner">
+               <h4>Premium</h4>
+               <span>1% + $12 / month</span>
+               <p>Digital Delivery Virtual Terminal Unlimited Spaces </p>
+            </div>
+            </div>
+            <div>
+               <div class="price-box-inner">
+               <h4>Platinum</h4>
+               <span>1% + $29 / month</span>
+               <p>Recurring Billing Digital Delivery Virtual Terminal Unlimited Spaces </p>
+            </div>
+            </div>
+            </div>
+          </div>
+         
+           <div class="boxxx"> 
+            <span>Free</span>Up to 2 Spaces</div>
+            <div class="boxxxx">
+          <h6>All plans are subject to Stripe's additional transaction charge of 2.9% + 30 cents per transaction. </h6>
+             </div>
+           </div>
+        </section>
+        <footer>
+               <div class="hello">
+     
+            <a href="http://nba.com" class="singup">stephen curry</a>  
+               <p class="copy">2018项目实训课 | 指导公司 by <a href="http://www.nba.com/">第嘉传媒</a></p>
+              </div>
+ 
+        </footer>
+
+
+</body>
+</html>

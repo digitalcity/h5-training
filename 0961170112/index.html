@@ -1,0 +1,1055 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- meta:vp -->
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+    <link rel="short icon" href="images/favicon.ico">
+    <title>Plasso</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+        .clearfix{*+height:1%;}
+        a{
+            text-decoration: none;
+        }
+        body{
+            font-family: helvetica;
+        }
+        .header{
+            width: 100%;
+        }
+        .top{
+            width: 100%;
+            background: linear-gradient(#edeeee,#e6e7f2);
+            text-align: center;
+        }
+        .top h1{
+            padding-top: 20px;
+        }
+        .logo{
+            display: inline-block;
+            width: 106px;
+            height: 20px;
+            background-image: url(images/logo.png);
+        }
+        .top>a{
+            text-align: center;
+            float: right;
+            display: inline-block;
+            color: #42424a;
+            height: 70px;
+            line-height: 70px;
+            margin-top: -55px;
+        }
+        .top .login{
+            width: 99px;
+            border-top: 2px solid #f7736b;
+            margin-right: 12px;
+        }
+        .top .login:hover{
+            background-color: #f7736b;
+            color: #fff;
+        }
+        .top .signup{
+            width: 116px;
+            border-top: 2px solid #6384ef;
+        }
+        .top .signup:hover{
+            background-color: #6384ef;
+            color: #fff;
+        }
+        /* 先找父级宽度 比如banner的父级是header 宽度是100% 也就是相当于设计图的宽度 1349*/
+        .banner{
+            background-image: url(images/hero-hi.jpg);
+            -webkit-background-size: cover;
+            background-size: cover;
+        }
+        .banner-text{
+            width: 100%;
+        }
+        .banner-text>h2{
+            font-size: 66px;
+            color: #fff;
+            text-align: center;
+            /*padding-top: 138px;*/
+            padding-top: 10.229%;
+        }
+        .banner-text>p{
+            font-size: 18px;
+            color: #acadbe;
+            line-height: 2.1111;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .banner-text>.text1{
+            margin-top: 74px;
+        }
+        .banner-text>.text2{
+            margin-bottom: 124px;
+        }
+        .banner-button{
+            background-color: rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        .banner-button>a{
+            display: inline-block;
+            padding: 25px 50px 22px 50px;
+            color: #f7fff7;
+            font-size:26px;
+            margin-top: 70px;
+            margin-bottom: 70px;
+        }
+        .banner-button>.signup{
+            border-radius: 5px;
+            background: linear-gradient(#f7736b,#f7655a);
+        }
+        .banner-button .signup:hover{
+            box-shadow: 0px 0px 30px 5px #f7655a;
+        }
+        .main-one{
+
+            width:100%;
+            background: linear-gradient(#e7eff7,#f7f7f7);
+        }
+        .inner h3{
+            text-align: center;
+            font-size: 24px;
+            color: black;
+            margin-bottom: 14px;
+            font-weight: lighter;
+        }
+        .inner p{
+            text-align: center;
+            font-size: 16px;
+            line-height: 1.75;
+            color: #8f94a5;
+        }
+        .inner{
+            /*1210/1349*/
+            max-width: 1210px;
+            width: 89.6960%;
+            margin: 0 auto;
+            padding-bottom: 80px;
+            /*padding-top: 91px;*/
+            padding-top: 6.745%;
+        }
+        .inner>div{
+            /*260/1210*/
+            width: 21.487%;
+            /*226/1210*/
+            height: 226px;
+            float: left;
+            /*39/1210*/
+            margin-left: 3.223%;
+            text-align: center;
+        }
+        .main-one>.inner>.fir{
+            /*27/1210*/
+            margin.left: 2.2314%;
+        }
+        .small{
+            background-image: url(images/icons.png);
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            border-radius: 34px;
+            margin: 0 auto;
+        }
+        .small2{
+            background-position: -123px 0;
+        }
+        .small3{
+            background-position: -246px 0;
+        }
+        .small4{
+            background-position: -369px 0;
+        }
+        .main-two{
+            width: 100%;
+        }
+        .main-two>div{
+            /*458/1349*/
+            width: 33.3333%;
+            float: left;
+            text-align: center;
+            /*padding-top: 120px;*/
+            padding-top: 8.895%;
+            /*125/1349*/
+            padding-bottom: 8.895%;
+        }
+        .main-two .pic{
+            width:100px;
+            height: 100px;
+            margin: 0 auto;
+            background-image: url(images/exp-icons.png);
+        }
+        .main-two h3{
+            /*28/458*/
+            margin-top: 5.9590%;
+            font-size: 24px;
+            /*26/458*/
+            margin-bottom: 5.6768%;
+            font-weight: lighter;
+        }
+        .main-two p{
+            /*70/458*/
+            margin-left: 15.2838%;
+            margin-right: 15.2838%;
+            font-size: 16px;
+            line-height: 1.5;
+            color: #fff7ff;
+        }
+        .main-two>.one{
+            background: linear-gradient(#5adeb2,#2bd6e8);
+        }
+        .main-two>.two{
+            background: linear-gradient(#f7736b,#ff577b);
+        }
+        .main-two>.three{
+            background: linear-gradient(#6384ef,#3699ff);
+        }
+        .main-two .pic1{
+            background-position: -1px 0;
+        }
+        .main-two .pic2{
+            background-position: -109px 0;
+        }
+        .main-two .pic3{
+            background-position: -220px 0;
+        }
+       .main-three{
+            width: 100%;
+            background-color: #fff;
+        }
+        .main-three .inner-three{
+            
+
+            width: 68.9399%;
+            margin: 0 auto;
+            padding-top: 10.5263%;
+            padding-bottom: 10.3780%;
+        }
+        .main-three article{
+            
+            width: 100.1%;
+            float: left;
+        }
+        .main-three .payp{
+            float: right;
+            margin-top: 0px;
+            
+            margin-top: 2.3665%;
+        }
+        .main-three a{
+            display: inline-block;
+            padding: 20px 30px 15px 30px;
+            border-radius: 5px;
+        }
+        .main-three p{
+            background-size: 18px;
+            line-height: 1.444;
+            color: #756b7b;
+            
+            margin-bottom: 6.881%;
+        }
+        .main-three h2{
+            font-size: 42px;
+            
+            margin-bottom: 5.161%;
+            font-weight: lighter;
+        }
+        .main-three .signup{
+            color: #fffff3;
+            background-color: #f7736b;
+        }
+    .main-three .signup:hover{
+            background-color: rgba(68,134,217,0.7);
+        }
+        .main-three .see{
+            color: #f7736b;
+            
+            margin-left: 3.225%;
+        }
+        .main-four{
+            width:100%;
+            background: linear-gradient(#e7eff7,#f7f7f7);
+        }
+        .main-four .inner .small{
+            background-image: url(images/icons.png);
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            border-radius: 34px;
+            margin: 0 auto;
+        }
+        .small5{
+            background-position: 0 -120px;
+        }
+        .small6{
+            background-position: -123px -120px;
+        }
+        .small7{
+            background-position: -246px -120px;
+        }
+        .small8{
+            background-position: -369px -120px;
+        }
+        .main-five{
+            width: 100%;
+            background-color: #29314a;
+        }
+        .inner-five{
+            
+            max-width: 930px;
+            width: 68.9399%;
+            margin: 0 auto;
+            padding-top: 10.3780%;
+            padding-bottom: 10.3780%;
+        }
+        .inner-five article{
+            margin-top: 14px;
+            
+            width: 63.440%;
+            float: left;
+        }
+        .main-five .space{
+            float: right;
+        }
+        .main-five .embed{
+            margin-top: 20px;
+            float: right;
+        }
+        .main-five h2{
+            font-size: 42px;
+            font-weight: lighter;
+            color: #fff;
+            margin-bottom: 4.946%;
+        }
+        .main-five p{
+            font-size: 16px;
+            line-height: 1.3125;
+            color: #b5bdce;
+            margin-bottom: 3.225%;
+        }
+        .five-btn{
+            margin-top: 34px;
+        }
+        .five-btn>.si{
+            display: inline-block;
+            padding: 20px 30px 15px 30px;
+            border-radius: 5px;
+            color: #effff6;
+            background-color: #4486d9;
+            float: left;
+        }
+        .five-btn .si:hover{
+            background-color: rgba(247,115,107,0.6);
+        }
+
+        .five-btn>div{
+            float: left;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .five-btn>div>.ex{
+            color: #bcc6cd;
+        }
+        .five-btn span a{
+            color: #74a5d4;
+        }
+        .inner-five article a{
+            color: #74a5d4;
+        }
+        .main-six{
+            width: 100%;
+            background-color: #428cff;
+        }
+        .inner-six{
+            /*922/1349*/
+            width: 67.3505%;
+            margin: 0 auto;
+            /*80/1349*/
+            padding-top: 5.930%;
+            padding-bottom: 5.930%;
+        }
+        .inner-six article{
+            /*48/922*/
+            margin-top: 5.206%;
+            /*480/922*/
+            width: 101%;
+            float: left;
+        }
+        .main-six .e-a{
+            float: right;
+             
+        }
+        .main-six p{
+            font-size: 20px;
+            line-height: 2.5;
+            color: #fff;
+        }
+        .six-btn{
+            /*66/922*/
+            margin-top: 7.158%;
+        }
+        .six-btn>a{
+            display: inline-block;
+            padding: 20px 30px 15px 30px;
+            border-radius: 5px;
+            color: #232941;
+        }
+        .six-btn .vp{
+            color: #312943;
+        }
+        .six-btn>.si{
+            color: #dfffff;
+            background-color: #232941;
+        }
+        .six-btn>.si:hover{
+            background-color: rgba(35,41,65,0.6);
+        }
+
+        
+        .main-seven{
+            width: 100%;
+            background: linear-gradient(#e7eff7,#f7f7f7);
+        }
+        .seven-inner{
+            max-width: 1210px;
+            width: 89.6960%;
+            margin: 0 auto;
+            padding-top: 6.0044%;
+        }
+        .seven-inner>div{
+            text-align: center;
+            width: 21.4876%;
+            float: left;
+            margin-left: 3.2231%;
+        }
+        .seven-inner>.first{
+            margin-left: 2.2314%;
+        }
+        .seven-inner .small{
+            width: 120px;
+            height: 120px;
+            border-radius: 36px;
+            background-image: url(images/icons.png);
+            margin: 0 auto;
+            margin-bottom: 2.4793%;
+        }
+        .seven-inner .small1{
+            background-position:  0 -245px;
+        }
+        .seven-inner .small2{
+            background-position: -125px -245px;
+        }
+        .seven-inner .small3{
+            background-position: -245px -245px;
+        }
+        .seven-inner .small4{
+            background-position: -365px -245px;
+        }
+        .seven-inner h3{
+            margin-bottom: 1.6528%;
+            font-size: 26px;
+            font-weight: normal;
+        }
+        .seven-inner p{
+            color:#8f94a5;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 11.5702%;
+            }
+            .main-eight{
+            background-image: url(images/desktop.jpg);
+            -webkit-background-size: cover;
+            background-size: cover;
+            padding-bottom: 100px;
+            padding-top: 100px;
+        }
+        .inner-eight{
+            /*534/1349*/
+            width: 60%;
+            /*210/1340*/
+            margin-left: 15.567%;
+        }
+        .inner-eight p{
+            font-size: 18px;
+            line-height: 1.5;
+            color: #6a5a6f;
+            margin-bottom: 46px;
+        }
+        .main-nine{
+            width: 100%;
+            background: linear-gradient(#e7eff7,#f7f7f7);
+        }
+        .nine-inner{
+            max-width: 1210px;
+            width: 89.6960%;
+            margin: 0 auto;
+            padding-top: 6.0044%;
+        }
+        .nine-inner>div{
+            text-align: center;
+            width: 21.4876%;
+            float: left;
+            margin-left: 3.2231%;
+        }
+        .nine-inner>.first{
+            margin-left: 2.2314%;
+        }
+        .nine-inner .small{
+            width: 120px;
+            height: 120px;
+            border-radius: 36px;
+            background-image: url(images/icons.png);
+            margin: 0 auto;
+            margin-bottom: 2.4793%;
+        }
+         .nine-inner .small1{
+            background-position:  0 -360px;
+        }
+        .nine-inner .small2{
+            background-position: -125px -365px;
+        }
+        .nine-inner .small3{
+            background-position: -245px -365px;
+        }
+        .nine-inner .small4{
+            background-position: -365px -365px;
+        }
+        .nine-inner h3{
+            margin-bottom: 1.6528%;
+            font-size: 20px;
+            font-weight: normal;
+        }
+        .nine-inner p{
+            color:#8f94a5;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 11.5702%;
+        }
+        
+        
+        .main-ten{
+            width: 100%;
+        }
+        .ten-inner{
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            /*144/1349*/
+            margin-top: 10.674%;
+        }
+        .ten-inner p{
+            font-size: 16px;
+            color: #a6adb6;
+            margin-top: 49px;
+        }
+        .ten-inner p:nth-child(2){
+            margin-bottom: 100px;
+        }
+        .ten-inner p:nth-child(2) a{
+            color: #f7736b;
+        }
+        .ten-inner p:nth-child(4){
+            margin-top: 98px;
+            margin-bottom: 34px;
+        }
+        .ten-inner p:nth-child(4) b{
+            color: #000;
+        }
+        .ten-inner p:nth-child(5){
+            margin-bottom: 144px;
+        }
+        .ten-inner div a{
+            /*280/1349*/
+            width: 20.756%;
+            display: inline-block;
+            border: 1px solid #ccc;
+            /*20/1349*/
+            margin-right: 1.482%;
+        }
+        .ten-inner div a:nth-child(3){
+            margin-right: 0;
+        }
+        .ten-inner div a span{
+            display: block;
+        }
+        .ten-inner div a h3{
+            font-size: 24px;
+            color: #000;
+            /*42/280*/
+            margin-top: 15%;
+            /*40/280*/
+            margin-bottom: 14.285%;
+        }
+        .ten-inner div a span:nth-child(2){
+            font-size: 80px;
+            color: #f7736b;
+            font-weight: bold;
+        }
+        .ten-inner div a span:nth-child(3){
+            font-size: 14px;
+            margin-top: 5px;
+            margin-bottom: 30px;
+            color: #a6adb6;
+        }
+        .ten-inner div a span:nth-child(4){
+            font-size: 24px;
+            color: #f7736b;
+            margin-bottom: 35px;
+        }
+        .ten-inner p .span1{
+            color: #f76b69;
+        }
+        .ten-inner p .span2{
+            color: #f76b69;
+        }
+        .ten-inner p .span3{
+            color: #42424a;
+        }
+        .main-eleven{
+            width: 100%;
+            background-image: url(images/market-bg.jpg);
+            -webkit-background-size: cover;
+            background-size: cover;
+            text-align: center;
+            padding-top: 146px;
+        }
+        .main-eleven div img{
+            vertical-align: middle;
+        }
+        .main-eleven div span{
+            font-size: 40px;
+            color: #fff;
+            vertical-align: middle;
+        }
+        .main-eleven p{
+            color: #fff;
+            font-size: 20px;
+            margin-top: 50px;
+            margin-bottom: 52px;
+        }
+        .main-eleven a{
+            display: inline-block;
+            padding: 20px 35px 15px 35px;
+            border: 2px solid #fff;
+            border-radius: 3px;
+            margin-bottom: 136px;
+            font-size: 16px;
+            color: #fff;
+        }
+        .main-eleven a:hover{
+            background-color: rgba(255,255,255,0.5);
+        }
+        .main-twelve{
+            width: 100%;
+            background-color: #fff;
+            text-align: center;
+        }
+        .main-twelve a{
+            display: inline-block;
+            padding: 29px 58px 23px 58px;
+            background-color: #f7736b;
+            border-radius: 4px;
+            font-size: 28px;
+            color: #fff;
+            margin-top: 140px;
+            margin-bottom: 148px;
+        }
+        .main-twelve a:hover{
+            background-color: #4486d9;
+        }
+        footer{
+            width: 100%;
+            text-align: center;
+        }
+        footer span{
+            color: #b5bdce;
+            font-size: 16px;
+            padding-bottom: 77px;
+        }
+        footer span a{
+            color: #f7736b;
+        }
+        @media screen and (max-width: 480px){
+            .top>a{
+                /*消失*/
+                display: none;
+            }
+            .banner h2{
+                padding-top: 70px;
+            }
+            .banner-text h2{
+                font-size: 40px;
+            }
+            .banner-text p{
+                font-size: 16px;
+                margin-top: 32px;
+                line-height: 20px;
+                margin-left: 33px;
+                margin-right: 32px;
+            }
+            .banner-button .learnmore{
+                display: none;
+            }
+            .banner-button .signup-btn{
+                padding: 15px 25px 10px 25px;
+            }
+            /*main-one*/
+            .main-one .inner>div{
+                width: 100%;
+                margin-top: 60px;
+            }
+            /*main-two*/
+            .main-two div{
+                width: 100%;
+            }
+            .main-two .pic{
+                margin-top: 80px;
+            }
+            .main-two p{
+                margin-bottom: 84px;
+            }
+            /*main-three*/
+            .main-three article h2{
+                font-size: 33px;
+                padding-top: 73px;
+                padding-bottom: 37px;
+            }
+            .inner-three article a{
+                margin-top: 65px;
+                margin-bottom: 69px;
+            }
+            .inner-three .payp{
+                margin-bottom: 81px;
+            }
+            /*main-four*/
+            .main-four .inner div{
+                width: 100%;
+                margin-top: 44px;
+            }
+            /*main-five*/
+            .main-five-inner .pay{
+                width: 100%;
+            }
+            .main-five-inner img{
+                float: none;
+                margin-bottom: 8.6909%;
+            }
+            .main-five-inner{
+                width: 88%;
+                text-align: center;
+                padding-bottom: 8.6909%;
+            }
+            .main-five .five-btn .si{
+                margin-top: 64px;
+                margin-bottom: 32px;
+            }
+            .inner-five img{
+                margin-top: 86px;
+            }
+            .inner-five img .embed{
+                margin-bottom: 82px;
+            }
+            /*main-six*/
+            .main-six .e-a{
+                display: none;
+            }
+            .main-six .p-group{
+                text-align: center;
+            }
+            /*main-seven*/
+            .seven-inner>div{
+                width: 100%;
+                margin-bottom: 30px;
+            }
+            /*main-nine*/
+            .nine-inner div{
+                width: 100%;
+            }
+            .inner-eight p{
+                text-align: center;
+            }
+            .ten-inner{
+                width: 100%;
+                text-align: center;
+            }
+            .ten-inner>div{
+                width: 100%;
+                margin-top: 6.0085%;
+            }
+            .ten-inner>div>a{
+                width: 75%;
+                margin-top: 12px;
+            }
+            .main-eleven{
+                width: 100%;
+                text-align: center;
+            }
+            .main-eleven p{
+                width: 88%;
+                margin: 0 auto;
+                margin-top: 45px;
+                margin-bottom: 58px;
+            }
+            .main-eleven a{
+                margin-bottom: 65px;
+                padding:15px 30px 15px 30px;
+            }
+            .main-twelve a{
+                margin-top: 90px;
+                margin-bottom: 163px;
+                padding:20px 35px 20px 35px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top clearfix">
+            <h1>
+                <div class="logo" hraf="#"></div>
+            </h1>
+            <a class="signup" href="#">Sign Up</a>
+            <a class="login" href="#">Login</a>
+        </div>
+        <div class="banner">
+            <div class="banner-text">
+                <h2>Payments Made Simple</h2>
+                <p class="text1">Plasso makes accepting and making payments quick & easy.</p>
+                <p class="text2">Pay for things. Get paid for things. Buy things. Sell things.</p>
+            </div>
+            <hr color="#13182c" size="1px">
+            <hr color="#4a4a52" size="1px">
+            <div class="banner-button">
+                <a class="signup" href="#">Sign Up</a>
+                <a class="learnmore" href="#">Learn More</a>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main-one">
+            <div class="inner clearfix">
+                <div class="fir">
+                    <div class="small small1"></div>
+                    <h3>Setup Shop</h3>
+                    <p>Sell products and/or subscriptions without writing any code at all.</p>
+                </div>
+                <div>
+                    <div class="small small2"></div>
+                    <h3>Digital Wallet</h3>
+                    <p>Securely store your credit cards to use for purchases.</p>
+                </div>
+                <div>
+                    <div class="small small3"></div>
+                    <h3>Physical Goods</h3>
+                    <p>Send shipment notifications to your customers with one click.</p>
+                </div>  
+                <div>
+                    <div class="small small4"></div>
+                    <h3>Digital Delivery</h3>
+                    <p>Sell your digital goods and files. Ebooks, videos, music, etc.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-two clearfix">
+                <div class="one">
+                    <div class="pic pic1"></div>
+                    <h3>Accept Payments</h3>
+                    <p>Start accepting payments instantly with Plasso. You can setup product pages called 'Spaces' if you'll be selling digital or physical goods/services. Send invoices directly to others. You'll even get your own 'Pay Me' page anyone can visit to send you money at anytime.</p>
+                </div>
+                <div class="two">
+                    <div class="pic pic2"></div>
+                    <h3>Manage Customers</h3>
+                    <p>Anytime someone purchases your products or you receive a payment you'll be able to manage those payments and customers from within Plasso. You can issue refunds, collect additional data at checkout and view all customer and client transaction history.</p>
+                </div>
+                <div class="three">
+                    <div class="pic pic3"></div>
+                    <h3>No Coding</h3>
+                    <p>Plasso makes selling things super easy. You don't need to know or write any code to get setup. The nuts and bolts of recurring payments (subscriptions) and one-time payments are all handled for you. You'll be ready to start making money in just a few clicks!</p>
+                </div>
+        </div>
+        <div class="main-three">
+            <div class="inner-three clearfix">
+                <article>
+                    <h2>Pay Me for Free</h2>
+                    <p>When you sign up with Plasso you’ll get your own 'Pay Me' page automatically, no setup or configuration required. If you want someone to pay you, simply send them your Pay Me link and they’ll be able to pay you using their credit card. There is no additional transaction charge for 'Pay Me' payments, they're fee free!</p>
+                    <div>
+                        <a class="signup"href="#">Sign Up</a>
+                        <a class="see"href="#">See Example</a>
+                    </div>
+                </article>
+                <img class="payp"src="images\payplease.png" alt="">
+            </div>
+        </div>
+        <div class="main-four">
+            <div class="inner clearfix">
+                <div class="fir">
+                    <div class="small small5"></div>
+                    <h3>Recurring Payments</h3>
+                    <p>Create subscriptions and charge your members on a recurring basis.</p>
+                </div>
+                <div>
+                    <div class="small small6"></div>
+                    <h3>One-Time Payments</h3>
+                    <p>Sell products, accept payments from clients, receive donations, etc.</p>
+                </div>
+                <div>
+                    <div class="small small7"></div>
+                    <h3>Pre-Orders</h3>
+                    <p>Capture pre-orders and charge the credit cards at a later time.</p>
+                </div>  
+                <div>
+                    <div class="small small8"></div>
+                    <h3>Invoices</h3>
+                    <p>Create and send invoices to anyone with a few clicks.</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-five">
+            <div class="inner-five clearfix">
+                <article>
+                    <h2>Sell Anything</h2>
+                    <p>Turn your idea into a real business with Plasso. Selling your physical or digital products couldn’t be easier. There’s no need to setup a ‘store’, every product you create get it’s own dedicated payment page, called a Space, that you can link to from your website, Facebook page, Twitter profile, etc. Or use <a href="#">Plasso Embeds</a> to put the payment form directly in your own existing web pages; you’ll just need to paste a small snippet of code into your HTML. </p>
+                    <p>Plasso is built to handle all types of payments: One-Time payments, Recurring payments, Pre-Orders, Invoices, Donations and more. </p>
+                    <p>Plasso uses <a href="#">Stripe</a>, the world’s best and most secure payment platform, to handle all transactions. Don’t have a Stripe account? No problem. You’ll be able to set one up with our 1-step sign up process.</p>
+                    <div class="five-btn">
+                        <a class="si"href="#">Sign Up</a>
+                        <div class="five-btn-group">
+                            <span class="ex">Examples: <a href="#">One-Time</a>•<a href="#">Recurring</a>•<a href="#">Embed</a></span>
+                        </div>
+                    </div>
+                </article>
+                <!-- <div class="pic-se"> -->
+                    <img class="space" src="images/space-example.png" alt="">
+                    <img class="embed" src="images/embed-example.jpg" alt="">
+                <!-- </div> -->
+            </div>
+        </div>
+        <div class="main-six">
+            <div class="inner-six clearfix">
+                <article>
+                    <div class="p-group">
+                        <p>Get setup in minutes.</p>
+                        <p>Don’t write a line of code.</p>
+                        <p>Manage customers from one spot.</p>
+                        <p>Sell multiple products & quantities.</p>
+                        <p>Offer coupon and discount codes.</p>
+                        <p>Collect additional data at checkout.</p>
+                        <p>Sell subscriptions & pre-orders.</p>
+                    </div>
+                    <div class="six-btn">
+                        <a class="si" href="#">Sign Up</a>
+                        <a class="vp" href="#">View Pricing</a>
+                    </div>
+                </article>
+                <img class="e-a" src="images/embed-art.png" alt="">
+            </div>
+        </div>
+        <div class="main-seven">
+                <div class="seven-inner clearfix">
+                    <div class="first">
+                        <div class="small small1">  </div>
+                        <h3>Reports</h3>
+                        <p>Keep track of sales and membership sign-ups at a glance.</p>
+                    </div>
+                    <div>
+                        <div class="small small2"></div>
+                        <h3>Automatic Receipts</h3>
+                        <p>Receipts & notifications emailed to your customers automatically.</p>
+                    </div>
+                    <div>
+                        <div class="small small3"></div>
+                        <h3>Virtual Terminal</h3>
+                        <p>Swipe with any USB card reader or charge cards manually.</p>
+                    </div>
+                    <div>
+                        <div class="small small4"></div>
+                        <h3>256-bit SSL Security</h3>
+                        <p>All transactions and payment forms are secure and encrypted.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="main-eight">
+            <div class="inner-eight clearfix">
+                <p>Everything on Plasso looks beautiful on both desktop and mobile. Plasso was designed for mobile and makes it easy for your customers to send you payments, view your premium content and manage their account from their mobile device. Plasso is completely retina optimized for crisp visuals on any screen. Plasso uses a HTML5 optimized player for all video & audio you upload for your customers to view. These small details will make you and your content look even better.</p>
+                <img src="images/devices.png" alt="">
+            </div>
+        </div>
+        <div class="main-nine">
+                <div class="nine-inner clearfix">
+                    <div class="first">
+                        <div class="small small1">  </div>
+                        <h3>Coupons</h3>
+                        <p>Offer coupons for your products. Configure how & when they expire.</p>
+                    </div>
+                    <div>
+                        <div class="small small2"></div>
+                        <h3>Export Data</h3>
+                        <p>All your sales and membership data can be exported with one click.</p>
+                    </div>
+                    <div>
+                        <div class="small small3"></div>
+                        <h3>Member Managementl</h3>
+                        <p>You have full control over members that sign up to any of your Spaces.</p>
+                    </div>
+                    <div>
+                        <div class="small small4"></div>
+                        <h3>Analytics</h3>
+                        <p>Add Google or Gosquared analytics to any of your Spaces.</p>
+                    </div>
+                </div>
+            </div>
+        <div class="main-ten">
+            <div class="ten-inner">
+                <h2>Pricing for Sellers</h2>
+                <p>All credit card transactions are subject to Stripe’s additional <span class="span1">transaction fee.</span> See <span class="span2">why</span>.</p>
+                <div>
+                    <a href="#">
+                        <h3>Basic</h3>
+                        <span>3%</span>
+                        <span>per transaction + Stripe's fee</span>
+                        <span>No monthly fee</span>
+                    </a>
+                    <a href="#">
+                        <h3>Premium</h3>
+                        <span>1%</span>
+                        <span>per transaction + Stripe's fee</span>
+                        <span>+ $29 per month</span>
+                    </a>
+                    <a href="#">
+                        <h3>Platinum</h3>
+                        <span>0%</span>
+                        <span>per transaction + Stripe's fee</span>
+                        <span>+ $139 per month</span>
+                    </a>
+                </div>
+                <p><span class="span3">Three ways to pay.</span>All plans include the same features. </p>
+                <p>'Pay Me' payments are always free on all plans: 0% per credit card transaction.</p>
+            </div>
+        </div>
+        <div class="main-eleven">
+            <div>
+                <img src="images/market-logo.png" alt="">
+                <span>Market</span>
+            </div>
+            <p>
+                Browse and search goods being sold on Plasso
+            </p>
+            <a href="#">Shop</a>
+        </div>
+        <div class="main-twelve">
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+    <footer>
+        <span>&copy; 2018项目实训课 | 指导公司by <a href="http://www.teacherlin.cn" target="_blank">第嘉传媒</a></span>
+    </footer>
+</body>
+</html>

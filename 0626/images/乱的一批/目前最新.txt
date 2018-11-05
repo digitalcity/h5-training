@@ -1,0 +1,124 @@
+media="screen">
+        *{margin:0;}
+            .container{width: 100%;background-color: #eee;}
+            .header-top{height:61px;background: linear-gradient(#f8756a,#f75448);}
+            .banner{
+                height: 769px;background-color: #617a7e;
+                background-image: url(images/photo.jpg);
+                background-repeat:  no-repeat;
+                background-size: 100%;}
+                .hotpic{height: 434px;background-color: #ced1d5;}
+                .banner h2 {padding-top: 96px;
+                    text-align:center;
+                    font-family: verdana;
+                    font-size: 66px;
+                    color:#fff;
+                    font-weight: normal;
+                    text-transform: capitalize;}
+                    .banner-txt{
+                        width: 660px;height: 172px;border:1px solid none;margin:114px auto 0;
+                    }
+                    .banner-txt div {width: 280px;float: left;color:white;}
+                    .banner-txt .recurring {float: right;}
+                    .banner-txt h3{font-family:verdana;font-size: 24px;font-weight:  normal;margin-bottom: 34px;padding-left: 58px;background-repeat: no-repeat;background-position: 0 center;line-height: 1.8em;}
+                    .accept h3{background-image: url(images/accept.png);}
+                    .recurring h3{background-image: url(images/recuirring.png);}
+                    .banner-txt p {font-family:verdana;font-size: 14px;color:#b3adb0;}
+                    .signup{display: block;width: 201px;height: 64px;
+                        background: linear-gradient(#f8756a,#f75347);
+                        margin-left: auto;margin-right: auto;
+                        border-radius: 32px;
+                        font-family: verdana;
+                        font-size:24px;
+                        color:#fff;
+                        text-align: center;
+                        line-height:64px;
+                        text-decoration:none;
+                        margin-top:147px;
+                        text-shadow: 2px 2px 0 #a1443d;
+                    }
+                    .hotpic img{margin:0 auto;}
+/*                    .hoptic-box{width: 755px;margin: 0 auto;}*/
+                    .product-info{background-color: white;margin: 0 auto;}
+                    .hotpic{background:linear-gradient(#b3b7bc,#e8eaec);height: 434px;
+            }
+            .hotpic{width: 780px;height: 476px;margin:0px auto;position:relative;top:-10%;}
+            .product-info{background-color: white;}
+            .baibian{background-color: #white;height: 82px;}
+            .info{width: 780px;height: 180px;/*border:1px solid red;*/margin-bottom: 82px;margin-left: auto;margin-right: auto;
+            background-image: url(images/4.gif);background-repeat: no-repeat;}
+            .info1{width: 780px;height: 180px;/*border:1px solid red;*/margin-bottom: 82px;margin-left: auto;margin-right: auto;
+            background-image: url(images/5.gif);background-repeat: no-repeat;}
+            .info2{width: 780px;height: 180px;/*border:1px solid red;*/margin-bottom: 82px;margin-left: auto;margin-right: auto;
+            background-image: url(images/6.gif);background-repeat: no-repeat;}
+            .info3{width: 780px;height: 180px;/*border:1px solid red;*/margin-bottom: 82px;margin-left: auto;margin-right: auto;
+            background-image: url(images/7.gif);background-repeat: no-repeat;}
+            .info4{width: 780px;height: 180px;/*border:1px solid red;*/margin-bottom: 82px;margin-left: auto;margin-right: auto;
+            background-image: url(images/8.gif);background-repeat: no-repeat;}
+            .info-txt{display:block;width: 540px;height: 180px;float:right;}
+            .info-txt h4{color: #f86960;font-size: 27px;}
+            .info-txt p{color:#7d838b;}
+                          .final{width: 780px;height: 500px;margin:0px auto;}
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <header>
+            <div class="header-top"></div>
+            <div class="banner">
+                <h2>payments made simple</h2>
+                <a href="http://www.baidu.com"class="signup">sign up.free</a>
+                <div class="banner-txt">
+                <div class="accept">
+                <h3>Accept Payments</h3>
+                <p>Space Box makes accepting payments quick 
+& easy.Setting up'Space' takes just 
+seconds.Even add your own logo and 
+header image to personalize each Space</p>
+</div>
+<div class="recurring">
+<h3>Recurring Billing</h3>
+<p>Charge customers on a recurring basis for 
+access to your content.All membership 
+sign-ups. management and billing is taken 
+care of fr you.Try it out!</p>
+            </div>
+            </div>
+            </div>
+        </header>
+        <section class="main">
+            <div class="hotpic">
+                <!-- <div class="hotpic-box"> -->
+                   <img src="images/10.gif">
+                <!-- </div>
+ -->            </div>
+            <div class="product-info"></div>
+           <div class="product-info">
+              <div class="baibian"></div><!-- ²¹Æë°×±ß -->
+              <div class="info"><div><!-- <img src="images/icon_01.gif"> --></div>
+              <div class="info-txt"><h4>Zero-hassle Subscriptions</h4><p>No coding necessary! Use Space Box to charge customers on a monthly or yearly basis for access to your content. The content manager makes it easy to create new posts for your paying customers to view. Posts support Markdown and you can upload any type of file as well. You can even use Space Box to collect money for rent, gym memberships, etc. Want to sell products but don't want to deal with PayPal or code things yourself? Use Space Box!</p></div></div>
+
+              <div class="info1"><div class="info-img2"><!-- <img src="images/icon_02.gif" > --></div>
+              <div class="info-txt"><h4>Beautiful On All Devices</h4><p>Everything on Space Box looks beautiful on both desktop and mobile devices. Space Box was designed with mobile in mind and makes it easy for your customers to send you payments, view your premium content and manage their account from their mobile device. Space Box is completely retina optimized for crisp visuals, and any Space you create will be as well. Space Box also uses a HTML5 optimized player for all video & audio you upload for your customers.</p></div></div>
+
+              <div class="info2"><div class="info-img3"><!-- <img src="images/icon_03.gif" float:left;> --></div>
+              <div class="info-txt"><h4>Create Spaces</h4><p>Space Box makes setting up payment forms, called 'Spaces', super fast. You can create either a 'One-Time Payment' or a 'Recurring Payment' Space. A One-Time Space (example) can be used to accept payments from clients, sell products, receive donations, etc. While a Recurring Space (example) enables you create pricing plans and sign members up onto those plans and charge them on a monthly or yearly basis. Members will be able to Log-In to your Space to manage their account and view your premium content.</p></div></div>
+
+              <div class="info3"><div class="info-img4"><!-- <img src="images/icon_04.gif" float:left;> --></div>
+              <div class="info-txt"><h4>Member Management</h4><p>You have full control over all members that sign up to any of your Spaces. You can view their account and payments made to you, suspend access, remove their account and even issue refunds via Stripe. Additionally, members can manage their own account and even upgrade / downgrade between plans you have setup for that Space.</p></div></div>
+
+              <div class="info4"><div class="info-img5"><!-- <img src="images/icon_05.gif" float:left;> --></div>
+              <div class="info-txt"><h4>Digital Delivery</h4><p>Want to sell your digital goods? Space Box makes it easy. Simply upload a file of any type to your One-Time Space and you're done! When customers visit the Space and make a purchase they'll receieve an email with a unique download link to get the file automatically. They can even make requests to re-download a file and you can approve or deny requests with a click!</p></div></div>
+           <div class="baibian"></div><!-- ²¹Æë°×±ß -->
+            </div>
+
+            <div class="pic-ad"></div>
+            <div class="product-function"></div>
+            <div class="pricing"></div>
+            <div class="final"><img src="images/11.png" ></div>
+                
+            </div>
+        </section>
+    </div>
+    </body>
+</html> 

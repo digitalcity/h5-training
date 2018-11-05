@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>刘传博的网站</title>
+	   <!-- meta:vp -->
+     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="short icon" href="images/favicon.ico">
+     meta：vp
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+		.clearfix{*+height:1%;}
+		a{
+			text-decoration: none;
+		}
+		body{
+			font-family: helvetica;
+		}
+		header{
+			width:100%;
+			/*height: 100px;*/
+			/*background:linear-gradient(#efeff7,#edeeee);*/
+			
+		}
+		/*----------------------------LoGo --------------------------------*/
+		.top{
+			width: 100%;
+			/*-------------------------字号---------------------------*/
+			background:linear-gradient(#efeff7,#edeeee);
+			text-align: center;
+		}
+		.top h1{
+			padding-top :20px;
+		}
+		.logo{
+			display: inline-block;
+			width: 106px;
+			height: 20px;
+			/*url 路径*/
+			background-image: url(images/logo.png);
+		}
+		.top>a{
+			text-align: center;
+			float: right;
+			display: inline-block;
+			color: #42424a;
+			height: 70px;
+			line-height: 70px;
+			font-size: 20px;
+			margin-top: -57px;
+		}
+		.login{
+			width: 99px;
+			/*留边       solid 颜色*/
+			border-top: 2px solid #f7736b;
+		}
+		.login:hover{
+			background-color: #f7736b;
+			color :#fff;
+		}
+		.signup{
+			width: 116px;
+			/*留边       solid 颜色*/
+			border-top: 2px solid #6384ef;
+			margin-left: 25px;
+		}
+		.signup:hover{
+			background-color: #6384ef;
+			color :#fff;
+		}
+
+		/*-----------------------------banner-------------------------------*/
+		
+		.banner{
+			width :100%;
+			background-image: url(images/hero-hi.jpg);
+			-webkit-background-size: cover;
+			background-size: cover;
+			padding-top:126px;
+
+		}
+		.banner-text{
+
+		}
+		.banner-text h2{
+			font-size: 68px;
+			color: #fff;
+			text-align: center;
+		}
+		.banner-text p{
+			width: 100%;
+			text-align: center;
+			color: #acadbe;
+			font-size: 18px;
+			line-height: 2.1111;
+		}
+		.text1{
+			margin-top: 64px;
+		}
+		.text2{
+			margin-bottom: 116px;
+		}
+
+		/*-------------------------------按钮--------------------------------*/
+		
+		.banner-button{
+			width: 100%;
+			/*height: 100px;*/
+			/*背景透明度*/
+			background-color: rgba(0,0,0,0.4);
+			text-align: center;
+		}
+		.banner-button a{
+			/*超链接的内边距*/
+			padding: 25px 50px 22px 50px;
+			/*转换模式*/
+			display: inline-block;
+			/*-------------------字号--------------------*/
+			font-size: 26px;
+			/*-------------------边距--------------------*/
+			margin-bottom: 70px;
+			margin-top: 70px;
+			/*-------------------字体颜色------------------*/
+			color: #fafae2;
+		}
+		.sup-btn{
+			/*-------------------圆角--------------------*/
+			border-radius: 7px;
+			/*------------------渐变色-------------------*/
+			background:linear-gradient(#f7736b,#f7655a);
+		}
+
+		/*------------------------------main 第一部分--------------------------------*/
+		.main-one{
+			width: 100%;
+			background-color: #efeff7;
+		}
+		/*---------照片位置---------*/
+		.one-inner{
+			width: 1210px;
+			margin: 0 auto;
+			padding-top: 81px;
+		}
+		.one-inner>div{
+			width: 260px;
+			float: left;
+			margin-left: 39px;
+			text-align: center;
+		}
+		.one-inner>.first{
+			margin-left: 27px;
+		}
+		.one-inner .small {
+			width: 120px;
+			height: 120px;
+			background-image: url(images/icons.png);
+			border-radius: 34px;
+			margin :0 auto;
+			margin-bottom: 28px;
+		}
+		.small2{
+		/*----背景图的位置  水平  垂直----*/
+			background-position: 120px 0;
+		}
+		.small3{
+			background-position: -240px 0;
+		}
+		.small4{
+			background-position: -360px 0;
+		}
+		.one-inner h3{
+			margin-bottom: 20px;
+			font-size: 26px;
+		}
+		.one-inner p{
+			color :#969cac;
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 140px;
+		}
+
+		/*------------------------------main 第二部分--------------------------------*/
+
+		.main-two{
+			width: 100%;
+		}
+		.main-two>div{
+			width:33.3333%;
+			float:left;
+			text-align: center;
+		}
+		/*---------底色------渐变色---*/
+		.main-two .first{
+			background:linear-gradient(#5adeb2,#2bd6e8);
+		}
+		.main-two .second{
+			background:linear-gradient(#f7736b,#f7655a);	
+		}
+		.main-two .third{
+			background:linear-gradient(#6384ef,#3699ff);	
+		}
+		/*---------照片位置---------*/
+		.main-two .pic{
+			width: 100px;
+			height: 100px;
+			margin: 0 auto;
+			margin-bottom: 40px;
+			margin-top: 100px;
+			background-image: url(images/exp-icons.png);
+		}
+		.pic2{
+			background-position: -110px 0;
+		}
+		.pic3{
+			background-position: -220px 0;
+		}
+		.main-two h3{
+			margin-bottom: 50px;
+			font-size: 26px;
+			color: #414a51;
+		}
+		.main-two p{
+			color :#fff;
+			font-size: 16px;
+			line-height: 24px;
+			margin-left: 120px;
+			margin-right: 120px;
+			margin-bottom: 90px;
+			
+		}
+
+		/*------------------------------main 第三部分--------------------------------*/
+		.main-three{
+			width: 100%;
+			height: 1000px;
+			background-color: #fff;
+		}
+		.main-three .inner{
+			height: 472px;
+			width: 969px;
+			float: left;
+			margin: 0 auto;/*居中对齐*/
+			background-color: #ffffff;
+		}
+		.main-three.inner.image{
+			padding-right: 50px;
+
+		}
+
+		
+		/*------------------------------main 第四部分--------------------------------*/
+		
+		.small5{
+		/*----背景图的位置  水平  垂直----*/
+			background-position: 0px -120px;
+		}
+		.small6{
+			background-position: -120px -120px;
+		}
+		.small7{
+			background-position: -240px -120px;
+		}
+		.small8{
+			background-position: -360px -120px;
+		}
+
+		/*------------------------------main 第五部分--------------------------------*/
+
+		.main-five{
+			width: 100%;
+			background:linear-gradient(#13182c,#182135);
+		}
+		.five-inner{
+			width: 930px;
+			/*-----组块居中-----*/
+			margin: 0 auto;
+		}
+		.five-inner article{
+			width: 590px;
+			float: left;
+		}
+		.five-inner .right{
+			width: 270px;
+			float: right;
+		}
+		.five-button span{
+			color: #c6c6cf;
+			font-size: 18px;
+		}
+		.five-button span a{
+			color: #66abf2;
+		}
+
+		/*------------------------------main 第六部分--------------------------------*/
+		.main-six{
+			width: 100%;
+			height: 710px;
+	        background:linear-gradient(#4a84ff,#419dff);
+		}
+		.main-six .inner{
+			height: 472px;
+			width: 969px;
+			margin: 0 auto;/*居中对齐*/
+		}
+		.main-six pay{
+		width: 588px;
+		height: 292px;
+		float: left;
+		margin-top: 143px;
+		margin-bottom: 140px;			
+
+		}
+
+		/*------------------------------main 第七部分--------------------------------*/	
+		.small9{
+		/*----背景图的位置  水平  垂直----*/
+			background-position: 0px -240px;
+		}
+		.small10{
+			background-position: -120px -240px;
+		}
+		.small11{
+			background-position: -240px -240px;
+		}
+		.small12{
+			background-position: -360px -240px;
+		}
+
+		/*------------------------------main 第八部分--------------------------------*/
+		.main-eight{			
+			/*---------插入图片----------*/
+			background-image: url(images/desktop.jpg);
+			/*-------------填充图片-----------*/
+			-webkit-background-size: cover;
+			background-size: cover;
+			width: 100%;
+			height: 450px;
+	   }
+		.main-eight .inner{
+			height: 472px;
+			width: 969px;
+			margin: 0 auto;/*居中对齐*/
+		}
+		
+		.main-eight .pay{
+			width: 588px;
+			height: 292px;
+			float: left;
+			/*margin-top: 143px;*/
+			margin-bottom: 140px;			
+		}
+
+		/*------------------------------main 第九部分--------------------------------*/
+		
+		.small13{
+		/*----背景图的位置  水平  垂直----*/
+			background-position: 0px -360px;
+		}
+		.small14{
+			background-position: -120px -360px;
+		}
+		.small15{
+			background-position: -240px -360px;
+		}
+		.small16{
+			background-position: -360px -360px;
+		}
+
+		/*------------------------------main 第十部分--------------------------------*/
+		
+		.main-ten{
+			width: 100%;
+		}
+		.ten-inner{
+			width: 888px;
+			margin: 0 auto;
+			/*-------------上边距------------*/
+			margin-top: 100px;
+			/*-------------组块居中------------*/
+			text-align: center;
+		}
+		.ten-inner>p{
+			font-size: 16px;
+			line-height: 24px;
+			margin-top: 40px;
+			margin-bottom: 100px;
+
+		}
+		.ten-inner>div>a{
+			width: 280px;
+			display: inline-block;
+			border: 1px solid #ccc;
+			/*----------边框间的距离------------*/
+			margin-right: 16px;
+		}
+		.ten-inner>div>a:nth-child(3){
+			/*-------------冒号前的儿子------------*/
+			margin-right: 0;
+		}
+		.ten-inner>div>a>span{
+			display: block;
+		}
+		.ten-inner>div>a>h3{
+			font-size: 24px;
+			color: #000;
+			margin-top: 42px;
+			margin-bottom: 40px;
+		}
+		.ten-inner>div>a>span:nth-child(2){
+			font-size: 80px;
+			color:#f7736b;
+			font-weight: bold;
+		}
+		.ten-inner>div>a>span:nth-child(3){
+			font-size: 14px;
+			margin-top: 5px;
+			margin-bottom: 30px
+			color: #a6adb6;
+		}
+		.ten-inner>div>a>span:nth-child(4){
+			font-size: 24px;
+			margin-top: 5px;
+			margin-bottom: 30px;
+			color :#a6adb6;
+		}
+
+		/*------------------------------main 第十一部分--------------------------------*/
+		.main-eleven{
+			width: 100%;
+			/*---------插入图片----------*/
+			background-image: url(images/market-bg.jpg);
+			/*-------------填充图片-----------*/
+			-webkit-background-size: cover;
+			background-size: cover;
+			text-align: center;
+			padding-top: 146px;
+		}
+		.main-eleven>div img{
+			vertical-align: middle;
+		}
+		.main-eleven>div span{
+			font-size: 40px;
+			color: #fff;
+			vertical-align: middle;
+		}
+		.main-eleven p{
+			color: #fff;
+			font-size: 20px;
+			margin-top: 50px;
+			margin-bottom: 52px;
+		}
+		.main-eleven>a{
+			display: inline-block;
+			padding: 20px 35px 15px 35px;
+			border: 2px solid #fff;
+			border-radius: 3px;
+			margin-bottom: 136px;
+			font-size: 16px;
+			color: #fff;
+		}
+		.main-eleven>a:hover{
+			/*-------透明度--------*/
+			background-color: rgba(255,255,255,0.5);
+		}
+
+		/*------------------------------main 第十二部分--------------------------------*/
+		
+		.main-twelve{
+			width: 100%;
+			background-color: #fff;
+			text-align: center;
+		}
+		/*-------行与行级块的水平居中  给上级写  text-align:center；----*/
+		.main-twelve a{
+			display: inline-block;
+			padding: 29px 58px 23px 58px;
+			background: linear-gradient(#f7736b,#f7655a);
+			border-radius: 4px;
+			font-size: 28px;
+			color: #fff;
+			margin-top: 140px;
+			margin-bottom: 148px;
+		}
+		.main-twelve a:hover{
+			background-color: #4486d9;
+		}
+		footer{
+			width: 100%;
+			text-align: center;
+		}
+		footer span{
+			color: #b5bdce;
+			font-size: 16px;
+			margin-bottom: 40px;
+		}
+		footer span a {
+			color: #f7736b;
+		}
+		<!-- 用媒体查询响应手机端的页面 -->
+        <!-- 当屏幕尺寸小于 480 的时候 -->
+	    @media screen and （max-width ：480px）{
+        .top>a{
+         display:none;
+
+        }
+        .top>h1{
+            display:none;
+        }  
+        . banner-text h2{
+           font-size:40px;
+        } 
+        .banner-text p{
+           font-size :16px;
+        .banner-button>.btn-more{
+          display :none;
+        }
+        .banner-button>.signup-btn{
+          padding:15px 25px 10px 25px;
+        }
+        
+	</style>
+	
+</head>
+<body>
+	<!-- 高度不设置，使用内容撑 清除浮动 -->
+	<!-- logo 做法 h1下的a的背景图处理 -->
+	<header>
+		<div class="top clearfix">
+			<h1>
+				<a class="logo" href="#"></a>
+			</h1>
+			<a class = "signup" href="#">Login</a>
+			<a class = "login" href="#">Sign Up</a>
+		</div>
+		<div class="banner">
+			<div class="banner-text">
+				<h2>Payments Made Simple</h2>
+				<p class="text1">Plasso makes accepting and making payments quick & easy.</p>
+				<p class="text2">Pay for things. Get paid for things. Buy things. Sell things.</p>
+			</div>
+			<hr color="#13182c" size="1">
+			<hr color="#4a4a52" size="1">
+			<div class="banner-button">
+				<a href="#" class="sup-btn">Sign Up</a>
+				<a href="#" class="lme-btn">Learn More</a>
+			</div>
+		</div>
+	</header>
+	<div class="main">
+
+		<div class="main-one">
+			<div class="one-inner clearfix">
+				<div class="first">
+					<div class="small small1"></div>
+					<h3>Setup Shop</h3>
+					<p>Sell products and/or subscriptions without writing any code at all.</p>
+				</div>
+				<div>
+					<div class="small small2"></div>
+					<h3>Digital Wallet</h3>
+					<p>Securely store your credit cards to use for purchases.</p>
+				</div>
+				<div>
+					<div class="small small3"></div>
+					<h3>Physical Goods</h3>
+					<p>Send shipment notifications to your customers with one click.</p>
+				</div>
+				<div>
+					<div class="small small4"></div>
+					<h3>Digital Delivery</h3>
+					<p>Sell your digital goods and files. Ebooks, videos, music, etc.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-two">
+			<div class="first">
+				<div class="pic pic1"></div>
+					<h3>Accept Payments</h3>
+					<p>Start accepting payments instantly with Plasso. You can setup product pages called 'Spaces' if you'll be selling digital or physical goods/services. Send invoices directly to others. You'll even get your own 'Pay Me' page anyone can visit to send you money at anytime.</p>
+			</div>
+			<div class="second">
+				<div class="pic pic2"></div>
+				<h3>Manage Customers</h3>
+				<p>Anytime someone purchases your products or you receive a payment you'll be able to manage those payments and customers from within Plasso. You can issue refunds, collect additional data at checkout and view all customer and client transaction history.</p>
+			</div>
+			<div class="third">
+				<div class="pic pic3"></div>
+					<h3>No Coding</h3>
+					<p>Plasso makes selling things super easy. You don't need to know or write any code to get setup. The nuts and bolts of recurring payments (subscriptions) and one-time payments are all handled for you. You'll be ready to start making money in just a few clicks!</p>
+			</div>
+		</div>
+
+		<div class="main-three">
+	<!-- h表示标题，从1到6,h1只能有一个，p表示文本 -->
+	<!-- /*超链接用div表示 用a表达，href 表示超链接的地址，中间为超链接在显示的名字。*/ -->
+			<div class="inner clearfix">
+				<article class = "pay">
+					<h2>Pay Me for Free</h2>
+					<p>When you sign up with Plasso you’ll get your own 'Pay Me' page automatically, no setup or configuration required. If you want someone to pay you, simply send them your Pay Me link and they’ll be able to pay you using their credit card. There is no additional transaction charge for 'Pay Me' payments, they're fee free!</p>
+					<div> 
+						<a href="#">Sign Up</a>
+						<a class="see" href="#">See Explame</a>
+					</div
+				</article>
+	<!-- >图片用img表示，src表示图片的路径。alt表示没有找到图片的提示！</!			 -->
+				<img class="payplease" src="images/payplease.png" alt="当前网络无法显示图片">
+			</div>
+		</div>
+
+		<div class="main-one">
+			<div class="one-inner clearfix">
+				<div class="first">
+					<div class="small small5"></div>
+					<h3>Recurring Payments</h3>
+					<p>Create subscriptions and charge your members on a recurring basis.</p>
+				</div>
+				<div>
+					<div class="small small6"></div>
+					<h3>One-Time Payments</h3>
+					<p>Sell products, accept payments from clients, receive donations, etc.</p>
+				</div>
+				<div>
+					<div class="small small7"></div>
+					<h3>Pre-Orders</h3>
+					<p>Capture pre-orders and charge the credit cards at a later time.</p>
+				</div>
+				<div>
+					<div class="small small8"></div>
+					<h3>Invoices</h3>
+					<p>Create and send invoices to anyone with a few clicks.</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-five">
+	<!-- h表示标题，从1到6,h1只能有一个，p表示文本 -->
+	<!-- /*超链接用div表示 用a表达，href 表示超链接的地址，中间为超链接在显示的名字。*/ -->
+			<div class="five-inner clearfix">
+				<article>
+					<h2>Sell Anything</h2>
+					<p>Turn your idea into a real business with Plasso. Selling your physical or digital products couldn’t be easier. There’s no need to setup a ‘store’, every product you create get it’s own dedicated payment page, called a Space, that you can link to from your website, Facebook page, Twitter profile, etc. Or use <a href="#">Plasso Embeds</a> to put the payment form directly in your own existing web pages; you’ll just need to paste a small snippet of code into your HTML.</p>
+					<p>Plasso is built to handle all types of payments: One-Time payments, Recurring payments, Pre-Orders, Invoices, Donations and more.</p>
+					<p>Plasso uses <a href="#">Stripe</a>, the world’s best and most secure payment platform, to handle all transactions. Don’t have a Stripe account? No problem. You’ll be able to set one up with our 1-step sign up process.</p>
+				
+					<div class="five-button"> 
+						<a href="#">Sign Up</a>
+						<span>Examples: <a href="#">One-Time</a>·<a href="#">Recurring</a>·<a href="#">Embed</a></span>
+					</div
+				</article>
+	<!-- >图片用img表示，src表示图片的路径。alt表示没有找到图片的提示！</!			 -->
+				<div class="right">
+					<img src="images/space-example.png" alt="">
+					<img src="images/embed-example.jpg" alt="">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="main-six">
+	<!-- h表示标题，从1到6,h1只能有一个，p表示文本 -->
+	<!-- /*超链接用div表示 用a表达，href 表示超链接的地址，中间为超链接在显示的名字。*/ -->
+			<div class="inner clearfix">
+				<article class = "pay">
+					<p>Get setup in minutes.Don’t write a line of code.Manage customers from one spot.Sell multiple products & quantities.Offer coupon and discount codes.Collect additionalata at checkout.Sell subscriptions & pre-orders.</p>
+					<div> 
+						<a href="#">Sign Up</a>
+						<a class="fix-see" href="#"> View Pricing</a>
+					</div
+				</article>
+	<!-- >图片用img表示，src表示图片的路径。alt表示没有找到图片的提示！</!			 -->
+				<img class="cft" src="images/embed-art.png" alt="当前网络无法显示图片">
+			</div>
+		</div>	
+
+		<div class="main-one">
+			<div class="one-inner clearfix">
+				<div class="first">
+					<div class="small small9"></div>
+					<h3>Reports</h3>
+					<p>Keep track of sales and membership sign-ups at a glance.</p>
+				</div>
+				<div>
+					<div class="small small10"></div>
+					<h3>Automatic Receipts</h3>
+					<p>Receipts & notifications emailed to your customers automatically.</p>
+				</div>
+				<div>
+					<div class="small small11"></div>
+					<h3>Virtual Terminal</h3>
+					<p>Swipe with any USB card reader or charge cards manually.</p>
+				</div>
+				<div>
+					<div class="small small12"></div>
+					<h3>256-bit SSL Security</h3>
+					<p>All transactions and payment forms are secure and encrypted.</p>
+				</div>
+			</div>
+		</div>	
+
+		<div class="main-eight">
+	<!-- h表示标题，从1到6,h1只能有一个，p表示文本 -->
+	<!-- /*超链接用div表示 用a表达，href 表示超链接的地址，中间为超链接在显示的名字。*/ -->
+			<div class="inner clearfix">
+				<article class = "pay">
+					<p>Everything on Plasso looks beautiful on both desktop and mobile. Plasso was designed for mobile and makes it easy for your customers to send you payments, view your premium content and manage their account from their mobile device. Plasso is completely retina optimized for crisp visuals on any screen. Plasso uses a HTML5 optimized player for all video & audio you upload for your customers to view. These small details will make you and your content look even better.</p>
+				</article>
+	<!-- >图片用img表示，src表示图片的路径。alt表示没有找到图片的提示！</!			 -->
+				<img class="cft" src="images/devices.png" alt="当前网络无法显示图片">
+			</div>
+		</div>
+
+		<div class="main-one">
+			<div class="one-inner clearfix">
+				<div class="first">
+					<div class="small small13"></div>
+					<h3>Coupons</h3>
+					<p>Offer coupons for your products. Configure how & when they expire.</p>
+				</div>
+				<div>
+					<div class="small small14"></div>
+					<h3>Export Data</h3>
+					<p>All your sales and membership data can be exported with one click.</p>
+				</div>
+				<div>
+					<div class="small small15"></div>
+					<h3>Member Management</h3>
+					<p>You have full control over members that sign up to any of your Spaces.</p>
+				</div>
+				<div>
+					<div class="small small16"></div>
+					<h3>Analytics</h3>
+					<p>Add Google or Gosquared analytics to any of your Spaces.</p>
+				</div>
+			</div>
+		</div>
+		<div class="main-ten">
+			<div class="ten-inner">
+				<h2>Pricing for Sellers</h2>
+				<p>All credit card transactions are subject to Stripe’s additional transaction fee. See why.</p>
+				<div>
+					<a href="#">
+						<h3>Basic</h3>
+						<span>3%</span>
+						<span>per transaction + Stripe's fee</span>
+						<span>No monthly fee</span>
+					</a>
+					<a href="#">
+						<h3>Premium</h3>
+						<span>1%</span>
+						<span>per transaction + Stripe's fee</span>
+						<span>+ $29 per month</span>
+					</a>
+					<a href="#">
+						<h3>Platinum</h3>
+						<span>0%</span>
+						<span>per transaction + Stripe's fee</span>
+						<span>+ $139 per month</span>
+					</a>
+				</div>
+				<p><b>Three ways to pay. </b>All plans include the same features. </p>
+				<p>'Pay Me' payments are always free on all plans: 0% per credit card transaction.</p>
+			</div>
+		</div>
+
+		<div class="main-eleven">
+			<div>
+				<img src="images/market-logo.png" alt="该位置没有此照片">
+				<span>Market</span>
+			</div>
+			<p>Browse and search goods being sold on Plasso</p>
+			<a href="#">Shop</a>
+		</div>
+
+		<div class="main-twelve">
+			<a href="#">Sign Up</a>
+		</div>
+	</div>
+	<footer>
+		<span>&copy; 2018项目实训课 | 指导公司 by <a href="http://www.teacherlin.cn" target="_blank">第嘉传媒</a> </span>
+	</footer>
+</body>
+</html>

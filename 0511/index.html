@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>狗昆fans website</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">    
+        <style type="text/css" media="screen">
+            *{margin:0;}
+            .clearfix:after{content:"";display:block;clear:both;}
+            .container {width:100%;background-color: #fff;}
+            .header-top {background:linear-gradient(#fa9f98,#d9483d);}
+            .header-top h1 {height: 61px;background: url(images/logo@1x.png);background-repeat: no-repeat;line-height: 61px;background-position: center center;}
+            /*.top-inner {height:61px;text-align: center;line-height: 61px;}logo为插入图片式*/
+            .banner {height:769px;background: url(images/photo.jpg);background-repeat:no-repeat;background-size: cover;}/*或者用100%代替cover*/
+            /*.banner img {width:100%;height:auto;}*/
+            .banner h2 {
+              padding-top:96px;/*设置内边距*/
+              text-align:center;/*文本对齐，left左对齐，right右对齐*/
+              font-family:verdana;/*设置字体*/
+              font-size:66px;/*设置字号*/
+              color:#fff;/*设置文本颜色*/
+              font-weight:normal;/*设置文本的粗细，normal正常，，bold加粗*/
+              text-transform:capitalize;
+              margin-bottom:147px;
+            }
+            .banner-txt {width: 46.4788%/*660/1420*/;height:172px;/*border:1px solid red;*/margin:114px/*上边距*/ auto/*左右自动*/ 0/*下边距*/;}
+            .banner-txt div{width: 42.4242%/*280/660*/;float: left;color: white;}
+            .banner-txt .recurring {float:right;}/*空格很重要*/
+            .banner-txt h3{font-family:verdana;font-size:24px;font-weight:normal;margin-bottom:34px;padding-left: 58px;background-repeat: no-repeat;background-position: 0 center;line-height: 1.8em/*字体大小的1.8倍*/;}
+            .accept h3{background-image: url(images/accept.png);}
+            .recurring h3{background-image: url(images/recurring.png);}
+            .banner-txt p{font-family:verdana;font-size:14px;color:#b3adb0;}
+            .signup {display:block;width:201px;height:64px;/*加上display:block才可以让盒子大小生效*/
+              background:linear-gradient(#f8756a,#f75347);                             
+              margin-left:auto;margin-right:auto;
+              border-radius:32px;/*四角成圆角*/
+              font-family:verdana;
+              font-size:24px;
+              color:#fff;
+              text-align: center;
+              line-height:64px;/*文字到中间*/
+              text-decoration:none;
+              text-transform:capitalize;
+              text-shadow:1px -1px 0 #a1443d;/*设置文本阴影 水平偏 垂直偏 模糊程度 阴影颜色*/
+            }
+            .main img {width:100%;}
+            .hotpic {background-image: url(images/hot-pic-bg_06.gif);background-repeat: repeat-x;}
+            .hotpic-inner {width: 53.1690%/*756/1420*/;margin:0 auto;}
+            .product-info {width: 53.0569%/*755/1420*/;margin:0 auto;}
+            .product-info>div {padding:43px 0;}
+            .icon {width: 25.2824%/*179/708*/;float: left;}
+            .info-txt {width: 70.7175%/*529/708*/;float: right;}
+            .info-txt h4 {font-family: verdana;font-size: 28px;color:#f86960;font-weight: normal;}
+            .info-txt p {font-family: verdana;font-size: 14px;color:#7d838b;margin-top: 25px;}
+            .pic-ad {background-image: url(images/pic-ad-bg_11.gif);background-repeat: repeat-x;background-position: 0 15px;}
+            .pic-ad-inner {width:758px;margin:0 auto;}
+            .product-function {width: 61.0563%/*867/1420*/;margin:0 auto;}
+            .product-function div {width: 24.9134%/*216/867*/;height: 147px;float: left;border-right: 1px #dbdbdb solid;text-align:center;padding-top: 57px;padding-bottom: 51px;}
+            .product-function div:last-child{border-right: none;}
+            .product-function span {display:block;width: 36px;height: 32px;margin:0 auto;background-repeat: no-repeat;background-position: center 0;}
+            .product-function div:first-child span {background-image: url(images/fun-icon_09.gif);}
+            .product-function div:nth-child(2) span {background-image: url(images/fun-icon_03.gif);}
+            .product-function div:nth-child(3) span {background-image: url(images/fun-icon_06.gif);}
+            .product-function div:last-child span {background-image: url(images/fun-icon_12.gif);}
+            .product-function h4{font-family: verdana;font-size: 20px;color:#f86960;margin:22px 0;font-weight: normal;}
+            .product-function p{font-size: 16px;color:#7d838b;}
+            .pricing {width:100%;background:linear-gradient(#ba4f48,#f47f77);padding-bottom: 30px;}
+            .pricing h3{font-size: 32px;color:#fff;font-family: verdana;font-weight: normal;text-align: center;padding-top:50px;padding-bottom: 72px;}
+            .price-inner {width: 63.9436%/*908/1420*/;margin:0 auto;}
+            .price-box {display:table-row;text-align: center;}
+            .price-box>div {display:table-cell;vertical-align: bottom/*盒子底对齐*/;padding:0 20px;}
+            .price-box>div div {width: 170px;padding:40px 42px;border-radius: 12px;background-color: #fff;line-height: 2.5em;}
+            .pricing h4 {font-family: verdana;font-size: 28px;font-weight: normal;}
+            .pricing span {font-weight: bold;}
+            .pricing p {color:#f86960;font-family: verdana;font-weight: normal;}
+            .free-btn {height: 69px;background-color: #eb776f;border-radius: 10px;box-shadow: 2px 2px 5px #c16059 inset /*水平阴影 竖直阴影 模糊距离 阴影颜色*/;margin-top: 30px;border-bottom: 1px solid #fa9e98;text-align: center;line-height: 69px;color: #33383f;text-transform: capitalize;}
+            .free-btn span {color: #fff;font-size: 20px;font-weight: normal;}
+            .price-bottom {font-size: 14px;color: #fff;text-align: center;margin:30px 0;}
+            footer {background-color: #fff;box-shadow:0 -3px 5px #ba615b;padding:80px 0 50px 0;}
+            .copy {font-size: 14px;color: #b5b9bd;text-align: center;margin-top: 30px;margin-bottom: 42px;}
+            .copy a {color: #f86960;text-decoration: none;}
+
+
+
+            @media screen and (max-width:480px){
+              .banner h2 {font-size: 46px;padding-top: 50px;margin-bottom: 70px;}
+              .banner-txt {width: 80%;}
+              .banner-txt .recurring {float: none;}
+              .banner-txt h3 {margin-bottom: 0;margin-top: 30px;}
+              .banner-txt div {width: 100%;float:none;}
+              .info-txt h4 {font-size: 20px;}
+              .hotpic-inner,.pic-ad-inner {width: 100%;}
+              .product-info {width: 90%;text-align: center;}
+              .icon,.info-txt {float: none;margin: 0 auto;}
+              .info-txt p {text-align: justify;}
+              .info-txt {width: 100%;padding-top: 25px;}
+              .product-function {width: 96%;}
+              .product-function div {width:49%;}
+              .product-function div:first-child,.product-function div:nth-child(2) {border-bottom: 1px #dbdbdb solid;}
+              .product-function div:nth-child(2) {border-right:none;}
+              .price-box,.price-box>div {display:block;}
+              .price-box>div {margin-bottom: 20px;}
+            }
+        </style>
+    </head>
+    <body>
+   <!-- .container>header>.header-top+.banner^section.main>.hotpic+.product-info+.pic-ad+.product-function+.pricing^footer -->
+      <div class="container">
+          <header>
+              <div class="header-top">
+              <h1></h1>
+              <!-- <div class="top-inner"></div> -->
+              </div>
+              <div class="banner">
+                  <!-- <img src="images/photo.jpg"> -->
+                  <h2>payments made simple</h2>
+                  <a href="http://www.baidu.com" class="signup">sign up.free</a>
+                  <div class="banner-txt">
+                    <div class="accept">
+                      <h3>Accept Payments</h3>
+                      <p>Space Box makes accepting payments quick & easy. Setting up 'Spaces' takes just seconds. Even add your own logo and header image to personalize each Space.</p>
+                    </div>
+                    <div class="recurring">
+                      <h3>Recurring Billing</h3>                                                                                                  
+                      <p>Charge customers on a recurring basis for access to your content. All membership sign-ups, management and billing is taken care of for you. Try it out!</p>
+                    </div>
+                  </div>
+              </div>
+          </header>
+          <section class="main">
+              <div class="hotpic">
+              <div class="hotpic-inner">
+              <img src="images/hot.jpg" alt="">
+              </div>
+              </div>
+              <div class="product-info">
+                <div class="clearfix">
+                  <div class="icon"><img src="images/icon_03.gif" alt=""></div>
+                  <div class="info-txt">
+                  <h4>Zero-hassle Subscriptions</h4>
+                  <p>
+                  No coding necessary! Use Space Box to charge customers on a monthly or yearly basis for access to your content. The content manager makes it easy to create new posts for your paying customers to view. Posts support Markdown and you can upload any type of file as well. You can even use Space Box to collect money for rent, gym memberships, etc. Want to sell products but don't want to deal with PayPal or code things yourself? Use Space Box!
+                  </p>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <div class="icon"><img src="images/icon_06.gif" alt=""></div>
+                  <div class="info-txt">
+                  <h4>Beautiful On All Devices</h4>
+                  <P>
+                  Everything on Space Box looks beautiful on both desktop and mobile devices. Space Box was designed with mobile in mind and makes it easy for your customers to send you payments, view your premium content and manage their account from their mobile device. Space Box is completely retina optimized for crisp visuals, and any Space you create will be as well. Space Box also uses a HTML5 optimized player for all video & audio you upload for your customers.
+                  </P>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <div class="icon"><img src="images/icon_08.gif" alt=""></div>
+                  <div class="info-txt">
+                  <h4>Create Spaces</h4>
+                  <p>
+                  Space Box makes setting up payment forms, called 'Spaces', super fast. You can create either a 'One-Time Payment' or a 'Recurring Payment' Space. A One-Time Space (example) can be used to accept payments from clients, sell products, receive donations, etc. While a Recurring Space (example) enables you create pricing plans and sign members up onto those plans and charge them on a monthly or yearly basis. Members will be able to Log-In to your Space to manage their account and view your premium content.
+                  </p>
+                </div>
+                </div>
+                <div class="clearfix">
+                  <div class="icon"><img src="images/icon_10.gif" alt=""></div>
+                  <div class="info-txt">
+                  <h4>Member Management</h4>
+                  <p>
+                  You have full control over all members that sign up to any of your Spaces. You can view their account and payments made to you, suspend access, remove their account and even issue refunds via Stripe. Additionally, members can manage their own account and even upgrade / downgrade between plans you have setup for that Space.
+                  </p>
+                  </div>
+                </div>
+                <div class="clearfix">
+                  <div class="icon"><img src="images/icon_12.gif" alt=""></div>
+                  <div class="info-txt">
+                  <h4>Digital Delivery</h4>
+                  <p>
+                  Want to sell your digital goods? Space Box makes it easy. Simply upload a file of any type to your One-Time Space and you're done! When customers visit the Space and make a purchase they'll receieve an email with a unique download link to get the file automatically. They can even make requests to re-download a file and you can approve or deny requests with a click!
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div class="pic-ad">
+                <div class="pic-ad-inner">
+                  <img src="images/pic-ad_11.jpg" alt="">
+                </div>
+              </div>
+              <div class="product-function clearfix">
+                <div>
+                <span></span>
+                  <h4>Virtual Terminal</h4>
+                  <p>Swipe with any USB card reader or charge cards manually.</p>
+                </div>
+                <div>
+                <span></span>
+                  <h4>256-bit SSL</h4>
+                  <p>All transactions and payment forms are secure and encrypted.</p>
+                </div>
+                <div>
+                <span></span>
+                  <h4>Reports</h4>
+                  <p>Keep track of sales and membership sign-ups at a glance.</p>
+                </div>
+                <div>
+                <span></span>
+                  <h4>Auto Emails</h4>
+                  <p>Receipts & notifications emailed to customers automatically.</p>
+                </div>
+              </div>
+              <div class="pricing">
+              <div class="price-inner">
+                <h3>Pricing</h3>
+                <div class="price-box">
+                  <div>
+                    <div class="price-box-inner">
+                      <h4>Pro</h4>
+                  <span>1% / transaction</span>
+                  <p>
+                  Virtual Terminal
+                  Unlimited Spaces
+                  </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="price-box-inner">
+                      <h4>Premium</h4>
+                  <span>1% + $12 / month</span>
+                  <p>
+                  Digital Delivery
+                  Virtual Terminal
+                  Unlimited Spaces
+                  </p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="price-box-inner">
+                      <h4>Platinum</h4>
+                  <span>1% + $29 / month</span>
+                  <p>
+                  Recurring Billing
+                  Digital Delivery
+                  Virtual Terminal
+                  Unlimited Spaces
+                  </p>
+                     </div>
+                    </div>
+                </div>
+              </div>
+              <div class="free-btn"><span>free</span> up to 2 spaces</div>
+              <div class="price-bottom">
+                  All plans are subject to Stripe's additional transaction charge of 2.9% + 30 cents per transaction.
+              </div>
+              </div>
+          </section>
+          <footer>
+            <a href="http://www.baidu.com" class="signup">sign up.free</a>
+            <div class="copy">
+            <p>© copyright| 指导公司 by <a herf="#">第嘉传媒</a></p>
+            </div>
+          </footer>
+      </div>
+    </body>
+</html>

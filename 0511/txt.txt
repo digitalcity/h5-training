@@ -1,0 +1,69 @@
+Space Box
+LOGIN
+Payments made simple.
+
+Sign Up ? Free
+ Accept Payments
+Space Box makes accepting payments quick & easy. Setting up 'Spaces' takes just seconds. Even add your own logo and header image to personalize each Space.
+
+ Recurring Billing
+Charge customers on a recurring basis for access to your content. All membership sign-ups, management and billing is taken care of for you. Try it out!
+
+ Space Box Interface Payment Page Your Own Space Adding Content
+Space Box Interface
+   
+Zero-hassle Subscriptions
+No coding necessary! Use Space Box to charge customers on a monthly or yearly basis for access to your content. The content manager makes it easy to create new posts for your paying customers to view. Posts support Markdown and you can upload any type of file as well. You can even use Space Box to collect money for rent, gym memberships, etc. Want to sell products but don't want to deal with PayPal or code things yourself? Use Space Box!
+
+Beautiful On All Devices
+Everything on Space Box looks beautiful on both desktop and mobile devices. Space Box was designed with mobile in mind and makes it easy for your customers to send you payments, view your premium content and manage their account from their mobile device. Space Box is completely retina optimized for crisp visuals, and any Space you create will be as well. Space Box also uses a HTML5 optimized player for all video & audio you upload for your customers.
+
+Create Spaces
+Space Box makes setting up payment forms, called 'Spaces', super fast. You can create either a 'One-Time Payment' or a 'Recurring Payment' Space. A One-Time Space (example) can be used to accept payments from clients, sell products, receive donations, etc. While a Recurring Space (example) enables you create pricing plans and sign members up onto those plans and charge them on a monthly or yearly basis. Members will be able to Log-In to your Space to manage their account and view your premium content.
+
+Member Management
+You have full control over all members that sign up to any of your Spaces. You can view their account and payments made to you, suspend access, remove their account and even issue refunds via Stripe. Additionally, members can manage their own account and even upgrade / downgrade between plans you have setup for that Space.
+
+Digital Delivery
+Want to sell your digital goods? Space Box makes it easy. Simply upload a file of any type to your One-Time Space and you're done! When customers visit the Space and make a purchase they'll receieve an email with a unique download link to get the file automatically. They can even make requests to re-download a file and you can approve or deny requests with a click!
+
+ Your Own App
+With Zero Setup
+All Spaces created with Space Box are optimized to work perfectly with the 'Add to Home Screen' feature on iOS that enables anyone to add your Space to their device's home screen.
+
+Virtual Terminal
+Swipe with any USB card reader or charge cards manually.
+
+256-bit SSL
+All transactions and payment forms are secure and encrypted.
+
+Reports
+Keep track of sales and membership sign-ups at a glance.
+
+Auto Emails
+Receipts & notifications emailed to customers automatically.
+
+Pricing
+Pro
+1% / transaction
+Virtual Terminal
+Unlimited Spaces
+ 
+Premium
+1% + $12 / month
+Digital Delivery
+Virtual Terminal
+Unlimited Spaces
+ 
+Platinum
+1% + $29 / month
+Recurring Billing
+Digital Delivery
+Virtual Terminal
+Unlimited Spaces
+Free Up to 2 Spaces
+All plans are subject to Stripe's additional transaction charge of 2.9% + 30 cents per transaction.
+
+Sign Up ? Free
+
+? 2018项目实训课 | 指导公司 by 第嘉传媒
